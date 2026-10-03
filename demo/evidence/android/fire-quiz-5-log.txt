@@ -1,0 +1,136 @@
+--------- beginning of main
+09-29 20:59:12.815  8743  8743 I Unity   : applyWindowUIChanges fullScreen = true, renderOutsideSafeArea = true
+09-29 20:59:13.465  8743  8743 V Unity   : Context Type: GameActivity
+09-29 20:59:13.467  8743  8743 D Unity   : CommandLine:  
+09-29 20:59:13.518  8743  8762 I Unity   : UnityApplication::CreateInstance
+09-29 20:59:13.518  8743  8762 I Unity   : GameActivity Package Version '4.4.0'
+09-29 20:59:13.521  8743  8762 I Unity   : Starting Game Loop
+09-29 20:59:13.636  8743  8762 I Unity   : Handle cmd APP_CMD_START(11)
+09-29 20:59:13.639  8743  8743 I Unity   : onResume
+09-29 20:59:13.663  8743  8762 I Unity   : Handle cmd APP_CMD_RESUME(12)
+09-29 20:59:13.767  8743  8762 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-29 20:59:13.804  8743  8762 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-29 20:59:13.808  8743  8762 I Unity   : Handle cmd APP_CMD_CONTENT_RECT_CHANGED(5)
+09-29 20:59:13.814  8743  8762 I Unity   : Handle cmd APP_CMD_INIT_WINDOW(1)
+09-29 20:59:13.856  8743  8762 I Unity   : MemoryManager: Using 'Dynamic Heap' Allocator.
+09-29 20:59:13.858  8743  8762 D Unity   : [UnityMemory] Configuration Parameters - Can be set up in boot.config
+09-29 20:59:13.858  8743  8762 D Unity   :     "memorysetup-allocator-temp-initial-block-size-main=262144"
+09-29 20:59:13.858  8743  8762 D Unity   :     "memorysetup-allocator-temp-initial-block-size-worker=262144"
+09-29 20:59:13.858  8743  8762 D Unity   :     "memorysetup-temp-allocator-size-background-worker=32768"
+09-29 20:59:13.858  8743  8762 D Unity   :     "memorysetup-temp-allocator-size-job-worker=262144"
+09-29 20:59:13.858  8743  8762 D Unity   :     "memorysetup-temp-allocator-size-preload-manager=262144"
+09-29 20:59:13.858  8743  8762 D Unity   :     "memorysetup-remapper-allocator-initial-capacity=32768"
+09-29 20:59:13.858  8743  8762 D Unity   :     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+09-29 20:59:13.858  8743  8762 D Unity   :     "memorysetup-temp-allocator-size-audio-worker=65536"
+09-29 20:59:13.858  8743  8762 D Unity   :     "memorysetup-temp-allocator-size-cloud-worker=32768"
+09-29 20:59:13.858  8743  8762 D Unity   :     "memorysetup-bucket-allocator-granularity=16"
+09-29 20:59:13.858  8743  8762 D Unity   :     "memorysetup-bucket-allocator-bucket-count=8"
+09-29 20:59:13.858  8743  8762 D Unity   :     "memorysetup-bucket-allocator-block-size=4194304"
+09-29 20:59:13.858  8743  8762 D Unity   :     "memorysetup-bucket-allocator-block-count=1"
+09-29 20:59:13.858  8743  8762 D Unity   :     "memorysetup-main-allocator-block-size=16777216"
+09-29 20:59:13.858  8743  8762 D Unity   :     "memorysetup-thread-allocator-block-size=16777216"
+09-29 20:59:13.858  8743  8762 D Unity   :     "memorysetup-gfx-main-allocator-block-size=16777216"
+09-29 20:59:13.858  8743  8762 D Unity   :     "memorysetup-gfx-thread-allocator-block-size=16777216"
+09-29 20:59:13.859  8743  8762 D Unity   :     "memorysetup-cache-allocator-block-size=4194304"
+09-29 20:59:13.859  8743  8762 D Unity   :     "memorysetup-typetree-allocator-block-size=2097152"
+09-29 20:59:13.859  8743  8762 D Unity   :     "memorysetup-profiler-bucket-allocator-granularity=16"
+09-29 20:59:13.859  8743  8762 D Unity   :     "memorysetup-profiler-bucket-allocator-bucket-count=8"
+09-29 20:59:13.859  8743  8762 D Unity   :     "memorysetup-profiler-bucket-allocator-block-size=4194304"
+09-29 20:59:13.859  8743  8762 D Unity   :     "memorysetup-profiler-bucket-allocator-block-count=1"
+09-29 20:59:13.859  8743  8762 D Unity   :     "memorysetup-profiler-allocator-block-size=16777216"
+09-29 20:59:13.859  8743  8762 D Unity   :     "memorysetup-profiler-editor-allocator-block-size=1048576"
+09-29 20:59:13.859  8743  8762 D Unity   :     "memorysetup-temp-allocator-size-main=4194304"
+09-29 20:59:13.859  8743  8762 D Unity   :     "memorysetup-job-temp-allocator-block-size=2097152"
+09-29 20:59:13.859  8743  8762 D Unity   :     "memorysetup-job-temp-allocator-block-size-background=1048576"
+09-29 20:59:13.859  8743  8762 D Unity   :     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+09-29 20:59:13.859  8743  8762 D Unity   :     "memorysetup-temp-allocator-size-gfx=262144"
+09-29 20:59:14.122  8743  8743 I Unity   : windowFocusChanged: true
+09-29 20:59:14.123  8743  8743 I Unity   : applyWindowUIChanges fullScreen = true, renderOutsideSafeArea = true
+09-29 20:59:14.123  8743  8743 I Unity   : resumeUnity
+09-29 20:59:14.337  8743  8762 D Unity   : Enabling Unity systrace
+09-29 20:59:14.337  8743  8762 D Unity   : Starting Unity systrace
+09-29 20:59:14.436  8743  8762 I Unity   : SetGameState: isLoading: true, mode: UNKNOWN, label: -2, quality: -1
+09-29 20:59:14.474  8743  8762 D Unity   : [VFS] Mount /data/app/~~VDOYvQKeb-d-3FSMu1O19A==/in.surakshaxr.app-hal3baNdEUmb5gpvPinxzA==/base.apk
+09-29 20:59:14.545  8743  8762 I Unity   : SystemInfo CPU = x86-64 SSE3 SSE4.1 SSE4.2 AVX, Cores = 4, Memory = 1966mb
+09-29 20:59:14.545  8743  8762 I Unity   : ApplicationInfo 'in.surakshaxr.app', Version '0.1.0', Min API Level '29', Target API Level '35'
+09-29 20:59:14.546  8743  8762 I Unity   : Built from '6000.3/staging' branch, Version '6000.3.24f1 (4e7b9b5b6244)', Build type 'Development', Scripting Backend 'il2cpp', CPU 'x86_64', Stripping 'Enabled'
+09-29 20:59:14.546  8743  8762 I Unity   : Device Model 'Google sdk_gphone16k_x86_64', OS 'Android OS 17 (API 37)'
+09-29 20:59:14.549  8743  8762 D Unity   : Determine if il2cpp resources need to extracted:
+09-29 20:59:14.551  8743  8743 I Unity   : applyWindowUIChanges fullScreen = true, renderOutsideSafeArea = true
+09-29 20:59:14.552  8743  8762 D Unity   :     Guid in '/storage/emulated/0/Android/data/in.surakshaxr.app/files/il2cpp/unity.ver' is invalid, expected '655adab3-5e3e-4622-bb0c-88039a37793c' was 'abddc614-f831-4816-b18c-728225c71855'
+09-29 20:59:14.552  8743  8762 D Unity   :     Extracting il2cpp resources
+09-29 20:59:14.841  8743  8762 D Unity   : Unable to find library path for 'il2cpp.usym'.
+09-29 20:59:14.987  8743  8762 D Unity   : [EGL] Attaching window :0x7dcc2984d550
+09-29 20:59:14.987  8743  8762 D Unity   : InitializeScriptEngine OK (0x7dcd3e626fc0)
+09-29 20:59:14.989  8743  8762 D Unity   : Found NO interfaces on host .
+09-29 20:59:14.991  8743  8762 D Unity   : Player connection [138308322516672]  Target information:
+09-29 20:59:14.991  8743  8762 D Unity   : 
+09-29 20:59:14.992  8743  8762 D Unity   : Player connection [138308322516672] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+09-29 20:59:14.992  8743  8762 D Unity   : 
+09-29 20:59:15.084  8743  8762 D Unity   : [Physics::Module] Initialized fallback backend.
+09-29 20:59:15.084  8743  8762 D Unity   : [Physics::Module] Id: 0xdecafbad
+09-29 20:59:15.094  8743  8762 D Unity   : PlayerInitEngineNoGraphics OK
+09-29 20:59:15.095  8743  8762 I Unity   : Company Name: SurakshaXR
+09-29 20:59:15.095  8743  8762 I Unity   : Product Name: SurakshaXR
+09-29 20:59:15.095  8743  8762 D Unity   : AndroidGraphics::Startup window =  0x7dcc2984d550
+09-29 20:59:15.095  8743  8762 D Unity   : [EGL] Attaching window :0x7dcc2984d550
+09-29 20:59:15.098  8743  8743 I Unity   : applyWindowUIChanges fullScreen = true, renderOutsideSafeArea = true
+09-29 20:59:15.199  8743  8762 D Unity   : [EGL] Request: ES 3.2 RGB 000 0/0
+09-29 20:59:15.199  8743  8762 D Unity   : [EGL] Checking ES 3.2 support...
+09-29 20:59:15.199  8743  8762 D Unity   : [EGL] ES3.2 not supported
+09-29 20:59:15.199  8743  8762 D Unity   : [EGL] Request: ES 3.1+AEP RGB 000 0/0
+09-29 20:59:15.200  8743  8762 D Unity   : [EGL] Checking ES 3.1 support...
+09-29 20:59:15.208  8743  8762 D Unity   : [EGL] ES 3.1 support detected
+09-29 20:59:15.209  8743  8762 D Unity   : [EGL] Found: ID[1] ES 3.1+AEP RGB 888 24/8
+09-29 20:59:15.209  8743  8762 D Unity   : GfxDevice: creating device client; kGfxThreadingModeThreaded
+09-29 20:59:15.209  8743  8762 D Unity   : [EGL] Request: ES 3.2 RGB 000 0/0
+09-29 20:59:15.256  8743  8762 D Unity   : [EGL] Request: ES 3.1+AEP RGB 000 0/0
+09-29 20:59:15.256  8743  8762 D Unity   : [EGL] Found: ID[1] ES 3.1+AEP RGB 888 24/8
+09-29 20:59:15.257  8743  8762 D Unity   : [EGL] Request: ES 3.0 RGBA 8888 0/0
+09-29 20:59:15.257  8743  8762 D Unity   : [EGL] Found: ID[2] ES 3.0 RGBA 8888 24/8
+09-29 20:59:15.263  8743  8762 D Unity   : ANativeWindow: (1280/720) RequestedResolution: (0/0) RenderingResolution: (0/0) EGLSurface: (1280/720)
+09-29 20:59:15.314  8743  8762 D Unity   : Renderer: Android Emulator OpenGL ES Translator (NVIDIA GeForce GTX 1650/PCIe/SSE2)
+09-29 20:59:15.314  8743  8762 D Unity   : Vendor:   Google (NVIDIA Corporation)
+09-29 20:59:15.314  8743  8762 D Unity   : Version:  OpenGL ES 3.1 (4.5.0 NVIDIA 591.59)
+09-29 20:59:15.314  8743  8762 D Unity   : GLES:     3
+09-29 20:59:15.314  8743  8762 D Unity   :  GL_EXT_debug_marker GL_EXT_robustness GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_OVR_multiview2 GL_EXT_multiview_texture_multisample GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 GL_EXT_texture_buffer ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_conf
+09-29 20:59:15.314  8743  8762 D Unity   : igs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_1
+09-29 20:59:15.328  8743  8762 D Unity   : OPENGL LOG: Creating OpenGL ES 3.1 graphics device ; Context level  <OpenGL ES 3.1> ; Context handle 964944608
+09-29 20:59:15.413  8743  8762 D Unity   : [EGL] Attaching window :0x7dcc2984d550
+09-29 20:59:15.415  8743  8762 D Unity   : Requested framebuffer: resolution[1280x720], rgba[8/8/8/8], depth+stencil[on], samples[1]
+09-29 20:59:15.425  8743  8762 D Unity   : Created framebuffer: resolution[1280x720], rgba[8/8/8/8], depth+stencil[24/8], samples[0] 
+09-29 20:59:15.445  8743  8762 D Unity   : SwappyWrapper: InitSwappyWrapper() succeeded.
+09-29 20:59:15.501  8743  8762 D Unity   : [EGL] Attaching window :0x7dcc2984d550
+09-29 20:59:15.501  8743  8762 D Unity   : Initialize engine version: 6000.3.24f1 (4e7b9b5b6244)
+09-29 20:59:15.833  8743  8762 D Unity   : [Physics::Module] Selected backend.
+09-29 20:59:15.834  8743  8762 D Unity   : [Physics::Module] Name: PhysX
+09-29 20:59:15.834  8743  8762 D Unity   : [Physics::Module] Id: 0xf2b8ea05
+09-29 20:59:15.834  8743  8762 D Unity   : [Physics::Module] SDK Version: 4.1.2
+09-29 20:59:15.834  8743  8762 D Unity   : [Physics::Module] Integration Version: 1.0.0
+09-29 20:59:15.834  8743  8762 D Unity   : [Physics::Module] Threading Mode: Multi-Threaded
+09-29 20:59:15.921  8743  8762 D Unity   : PlayerInitEngineGraphics OK
+09-29 20:59:15.927  8743  8762 D Unity   : Found 18 native sensors
+09-29 20:59:15.929  8743  8762 D Unity   : Sensor :        Accelerometer ( 1) ; 0.000248 / 0.01s ; Goldfish 3-axis Accelerometer / The Android Open Source Project 
+09-29 20:59:15.930  8743  8762 D Unity   : Sensor :        Accelerometer ( 1) ; 0.000248 / 0.01s ; Goldfish 3-axis Accelerometer / The Android Open Source Project 
+09-29 20:59:15.930  8743  8762 D Unity   : enabled Accelerometer sensor
+09-29 20:59:15.960  8743  8762 I Unity   : SetGameState: isLoading: false, mode: UNKNOWN, label: -1, quality: 2
+09-29 20:59:15.961  8743  8762 I Unity   :     HasWindow = 1, HasFocus = 0
+09-29 20:59:15.961  8743  8762 I Unity   : Handle cmd APP_CMD_WINDOW_RESIZED(3)
+09-29 20:59:15.961  8743  8762 D Unity   : NativeWindow resized 1280x720
+09-29 20:59:15.961  8743  8762 I Unity   : Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+09-29 20:59:15.961  8743  8762 I Unity   : Handle cmd APP_CMD_GAINED_FOCUS(7)
+09-29 20:59:15.961  8743  8762 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-29 20:59:15.973  8743  8762 D Unity   : ANativeWindow: (1280/720) RequestedResolution: (0/0) RenderingResolution: (0/0) EGLSurface: (1280/720)
+09-29 20:59:16.137  8743  8762 I Unity   : SetGameState: isLoading: true, mode: UNKNOWN, label: 0, quality: 2
+09-29 20:59:18.197  8743  8762 D Unity   : UnloadTime: 1.188000 ms
+09-29 20:59:18.199  8743  8762 I Unity   : SetGameState: isLoading: false, mode: UNKNOWN, label: 0, quality: 2
+09-29 20:59:18.911  8743  8762 I Unity   : SurakshaXR offline startup ready.
+09-29 20:59:18.911  8743  8762 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-29 20:59:18.911  8743  8762 I Unity   : SurakshaXR.Presentation.PreviewApp:Awake()
+09-29 20:59:18.911  8743  8762 I Unity   : UnityEngine.GameObject:Internal_AddComponentWithType(Type)
+09-29 20:59:18.911  8743  8762 I Unity   : UnityEngine.GameObject:AddComponent()
+09-29 20:59:18.911  8743  8762 I Unity   : 
+09-29 20:59:18.923  8743  8762 D Unity   : Sensor :        Accelerometer ( 1) ; 0.000248 / 0.01s ; Goldfish 3-axis Accelerometer / The Android Open Source Project 
+09-29 20:59:18.923  8743  8762 D Unity   : Using NDK Choreographer.
+09-29 20:59:18.937  8743  8762 D Unity   : Stopping Unity systrace
+09-29 20:59:19.042  8743  8762 D Unity   : Failed to load native plugin: Unable to lookup library path for '_burst_0_0'.

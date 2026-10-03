@@ -1,0 +1,23 @@
+{
+  "raise_alarm": {
+    "effect": "alarm",
+    "entity": "alarm_panel"
+  },
+  "use_demo_extinguisher_when_permitted": {
+    "effect": "discharge",
+    "entity": "extinguisher",
+    "target": "fire_fx"
+  },
+  "inspect_detector_alarm": {
+    "effect": "alarm",
+    "entity": "detector_ui"
+  },
+  "reach_safe_exit_and_muster": {
+    "effect": "arrival",
+    "entity": "safe_exit_marker"
+  },
+  "report_and_use_safe_route": {
+    "effect": "arrival",
+    "entity": "safe_route_marker"
+  }
+}

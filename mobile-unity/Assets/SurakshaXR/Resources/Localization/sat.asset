@@ -1,0 +1,1372 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: sat
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: sat
+  m_SharedData: {fileID: 11400000, guid: 29b563ca655de0146a6dda9e5747f945, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 670756864
+    m_Localized: '[SAT REVIEW] Confirm the buddy / attendant sequence'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721088512
+    m_Localized: '[SAT REVIEW] Enter the restricted area'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477120
+    m_Localized: '[SAT REVIEW] Identify the hazard'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477121
+    m_Localized: '[SAT REVIEW] Ignore the detector alarm'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477122
+    m_Localized: '[SAT REVIEW] Ignore the hazard'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477123
+    m_Localized: '[SAT REVIEW] Inspect the detector alarm'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477124
+    m_Localized: '[SAT REVIEW] Move on without raising the alarm'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477125
+    m_Localized: '[SAT REVIEW] Proceed alone'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477126
+    m_Localized: '[SAT REVIEW] Raise the alarm'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477127
+    m_Localized: '[SAT REVIEW] Reach the safe exit and muster area'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477128
+    m_Localized: '[SAT REVIEW] Recognize and remain outside the restricted area'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477129
+    m_Localized: '[SAT REVIEW] Re-enter the hazard area'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477130
+    m_Localized: '[SAT REVIEW] Report and use the safe route'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477131
+    m_Localized: '[SAT REVIEW] Select the configured demo PPE option'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477132
+    m_Localized: '[SAT REVIEW] Select the unapproved demo option'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477133
+    m_Localized: '[SAT REVIEW] Take the blocked route'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477134
+    m_Localized: '[SAT REVIEW] Use the equipment permitted by this demo'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477135
+    m_Localized: '[SAT REVIEW] Use the restricted route'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477136
+    m_Localized: '[SAT REVIEW] Alarm notification'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477137
+    m_Localized: '[SAT REVIEW] Alarm recognition'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477138
+    m_Localized: '[SAT REVIEW] Buddy system'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477139
+    m_Localized: '[SAT REVIEW] Decision equipment'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477140
+    m_Localized: '[SAT REVIEW] Evacuation reporting'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477141
+    m_Localized: '[SAT REVIEW] Evacuation sequence'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477142
+    m_Localized: '[SAT REVIEW] Hazard recognition'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477143
+    m_Localized: '[SAT REVIEW] Hazard zone'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477144
+    m_Localized: '[SAT REVIEW] Ppe'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477145
+    m_Localized: '[SAT REVIEW] Blocked exit'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477146
+    m_Localized: '[SAT REVIEW] Safe exit'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477147
+    m_Localized: '[SAT REVIEW] Safe route'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477148
+    m_Localized: '[SAT REVIEW] Alarm panel'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477149
+    m_Localized: '[SAT REVIEW] Demo equipment'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477150
+    m_Localized: '[SAT REVIEW] Demo fire hazard'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477151
+    m_Localized: '[SAT REVIEW] Alarm raised in the demo.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477152
+    m_Localized: '[SAT REVIEW] Notification was missed. Return to the alarm action.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477153
+    m_Localized: '[SAT REVIEW] The blocked route is a critical error in this scenario.
+      Retry the configured response.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477154
+    m_Localized: '[SAT REVIEW] The configured demo response was selected.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477155
+    m_Localized: '[SAT REVIEW] Safe exit and muster sequence completed.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477156
+    m_Localized: '[SAT REVIEW] Hazard recognized. Continue to the alarm.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477157
+    m_Localized: '[SAT REVIEW] The hazard was missed. Recognize it before continuing.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477158
+    m_Localized: '[SAT REVIEW] Re-entry is a critical error in this scenario. Use
+      the safe exit.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477159
+    m_Localized: '[SAT REVIEW] Recognize the hazard, raise the alarm, make the configured
+      demo decision and reach the muster area.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477160
+    m_Localized: '[SAT REVIEW] Fire & Explosion Response'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477161
+    m_Localized: '[SAT REVIEW] Alarm'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477162
+    m_Localized: '[SAT REVIEW] Evacuate'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477163
+    m_Localized: '[SAT REVIEW] Recognize'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477164
+    m_Localized: '[SAT REVIEW] Safe decision'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477165
+    m_Localized: '[SAT REVIEW] Recognize the hazard, raise the alarm, make the configured
+      demo decision and reach the muster area.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477166
+    m_Localized: '[SAT REVIEW] Fire & Explosion Response'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477167
+    m_Localized: '[SAT REVIEW] Find the alarm panel and choose the notification action.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477168
+    m_Localized: '[SAT REVIEW] Raise the alarm'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477169
+    m_Localized: '[SAT REVIEW] This fixture permits demo equipment use. It does not
+      authorize real firefighting.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477170
+    m_Localized: '[SAT REVIEW] Choose the configured response'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477171
+    m_Localized: '[SAT REVIEW] Follow the marked safe route. Do not choose the blocked
+      route or re-enter the hazard.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477172
+    m_Localized: '[SAT REVIEW] Use the safe exit and muster area'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477173
+    m_Localized: '[SAT REVIEW] Observe the marked demo hazard. Choose how to respond.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477174
+    m_Localized: '[SAT REVIEW] Recognize the fire hazard'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477175
+    m_Localized: '[SAT REVIEW] Buddy / attendant station'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477176
+    m_Localized: '[SAT REVIEW] Demo detector'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477177
+    m_Localized: '[SAT REVIEW] Configured demo PPE'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477178
+    m_Localized: '[SAT REVIEW] Restricted area'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477179
+    m_Localized: '[SAT REVIEW] Demo detector alarm recognized.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477180
+    m_Localized: '[SAT REVIEW] The alarm was missed. Inspect the detector.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477181
+    m_Localized: '[SAT REVIEW] Buddy / attendant sequence confirmed.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477182
+    m_Localized: '[SAT REVIEW] Proceeding alone is a critical error in this scenario.
+      Confirm the configured sequence.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671424
+    m_Localized: '[SAT REVIEW] Report and safe-route sequence completed.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671425
+    m_Localized: '[SAT REVIEW] The restricted route is a critical error in this scenario.
+      Use the safe route.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671426
+    m_Localized: '[SAT REVIEW] Configured demo PPE selected.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671427
+    m_Localized: '[SAT REVIEW] This option is not approved by the demo configuration.
+      Try again.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671428
+    m_Localized: '[SAT REVIEW] Unauthorized entry is a critical error in this scenario.
+      Stay outside the boundary.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671429
+    m_Localized: '[SAT REVIEW] Restricted area recognized.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671430
+    m_Localized: '[SAT REVIEW] Recognize the demo detector alarm, restricted area,
+      equipment and buddy sequence, then take the safe route.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671431
+    m_Localized: '[SAT REVIEW] Gas Leak & Confined Space'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671432
+    m_Localized: '[SAT REVIEW] Alarm'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671433
+    m_Localized: '[SAT REVIEW] Buddy'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671434
+    m_Localized: '[SAT REVIEW] Evacuate'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671435
+    m_Localized: '[SAT REVIEW] Hazard zone'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671436
+    m_Localized: '[SAT REVIEW] Ppe'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671437
+    m_Localized: '[SAT REVIEW] Recognize the demo detector alarm, restricted area,
+      equipment and buddy sequence, then take the safe route.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671438
+    m_Localized: '[SAT REVIEW] Gas Leak & Confined Space'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671439
+    m_Localized: '[SAT REVIEW] The detector shows a demo alarm. No gas concentration
+      or real safety threshold is simulated.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671440
+    m_Localized: '[SAT REVIEW] Recognize the detector alarm'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671441
+    m_Localized: '[SAT REVIEW] Find the buddy station and choose the configured sequence.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671442
+    m_Localized: '[SAT REVIEW] Confirm the buddy / attendant sequence'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671443
+    m_Localized: '[SAT REVIEW] Use the marked safe route and report the alarm as
+      configured in this demo.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671444
+    m_Localized: '[SAT REVIEW] Report and use the safe route'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671445
+    m_Localized: '[SAT REVIEW] Use the option specified by this demo. Real equipment
+      selection requires the site SOP.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671446
+    m_Localized: '[SAT REVIEW] Select configured demo PPE'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671447
+    m_Localized: '[SAT REVIEW] Observe the training boundary and choose the restricted-area
+      response.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671448
+    m_Localized: '[SAT REVIEW] Recognize the restricted area'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671449
+    m_Localized: '[SAT REVIEW] Alarm'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671450
+    m_Localized: '[SAT REVIEW] Evacuation'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671451
+    m_Localized: '[SAT REVIEW] Hazard recognition'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671452
+    m_Localized: '[SAT REVIEW] Sequence'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671453
+    m_Localized: '[SAT REVIEW] Alarm'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671454
+    m_Localized: '[SAT REVIEW] Buddy system'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671455
+    m_Localized: '[SAT REVIEW] Confined space'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671456
+    m_Localized: '[SAT REVIEW] Evacuation'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671457
+    m_Localized: '[SAT REVIEW] Hazard zone'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671458
+    m_Localized: '[SAT REVIEW] Ppe'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671459
+    m_Localized: '[SAT REVIEW] Add worker'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671460
+    m_Localized: '[SAT REVIEW] Practice again'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671461
+    m_Localized: '[SAT REVIEW] Knowledge assessment and certification are under development.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671462
+    m_Localized: '[SAT REVIEW] Back'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671463
+    m_Localized: '[SAT REVIEW] SURAKSHA XR'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671464
+    m_Localized: '[SAT REVIEW] Certificates'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671465
+    m_Localized: '[SAT REVIEW] Continue'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671466
+    m_Localized: '[SAT REVIEW] Drag the joystick to walk. Drag the scene above it
+      to look. Approach the object, then choose an action.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671467
+    m_Localized: "[SAT REVIEW] DEMO \u2022 NOT AN APPROVED SOP"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671468
+    m_Localized: '[SAT REVIEW] Display name'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671469
+    m_Localized: '[SAT REVIEW] Approach the highlighted object to interact.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671470
+    m_Localized: '[SAT REVIEW] No certificates yet. Complete a passing assessment
+      to receive a signed demo certificate.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671471
+    m_Localized: '[SAT REVIEW] Your completed practice sessions will appear here.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671472
+    m_Localized: '[SAT REVIEW] Could not complete this operation. Your existing records
+      are preserved. Restart and try again.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671473
+    m_Localized: '[SAT REVIEW] Leave training'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671474
+    m_Localized: '[SAT REVIEW] Use the offline 3D simulator, or choose AR on a supported
+      device with its AR service already installed.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671475
+    m_Localized: '[SAT REVIEW] Training history'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671476
+    m_Localized: '[SAT REVIEW] Training home'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671477
+    m_Localized: '[SAT REVIEW] Choose an action'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671478
+    m_Localized: '[SAT REVIEW] Enter a unique worker code and a display name.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671479
+    m_Localized: '[SAT REVIEW] Choose your language'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671480
+    m_Localized: '[SAT REVIEW] Profiles and practice history are saved locally. Sync
+      is not enabled in this preview.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671481
+    m_Localized: '[SAT REVIEW] No weak topics found in this session.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671482
+    m_Localized: '[SAT REVIEW] None'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671483
+    m_Localized: '[SAT REVIEW] Training available offline'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671484
+    m_Localized: '[SAT REVIEW] Pause'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671485
+    m_Localized: '[SAT REVIEW] Training paused'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671486
+    m_Localized: '[SAT REVIEW] Records waiting to sync'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671487
+    m_Localized: '[SAT REVIEW] Start practice'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671488
+    m_Localized: '[SAT REVIEW] Practice completed'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671489
+    m_Localized: '[SAT REVIEW] DEVELOPMENT PREVIEW'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671490
+    m_Localized: '[SAT REVIEW] Training result'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671491
+    m_Localized: '[SAT REVIEW] Resume'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671492
+    m_Localized: '[SAT REVIEW] Try again'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671493
+    m_Localized: '[SAT REVIEW] Unvalidated demo content. This preview is not an approved
+      site procedure or a statutory certificate. Follow your site SOP and authorized
+      trainer.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671494
+    m_Localized: '[SAT REVIEW] Save profile'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671495
+    m_Localized: '[SAT REVIEW] Saved on this device'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671496
+    m_Localized: '[SAT REVIEW] Score'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671497
+    m_Localized: '[SAT REVIEW] Settings & safety notice'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671498
+    m_Localized: '[SAT REVIEW] Practice today. Return home safely.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671499
+    m_Localized: '[SAT REVIEW] Translations are draft content requiring human and
+      safety review. Santali entries are clearly marked English review placeholders.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671500
+    m_Localized: '[SAT REVIEW] Topics to revisit'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671501
+    m_Localized: '[SAT REVIEW] Choose a worker'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671502
+    m_Localized: '[SAT REVIEW] Worker code'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254790529024
+    m_Localized: '[SAT REVIEW] The configured alarm action must be completed.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301184
+    m_Localized: '[SAT REVIEW] Raise the alarm'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301185
+    m_Localized: '[SAT REVIEW] Skip directly to the result'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301186
+    m_Localized: '[SAT REVIEW] Move away without notification'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301187
+    m_Localized: '[SAT REVIEW] Which action satisfies the alarm step in this demo?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301188
+    m_Localized: '[SAT REVIEW] This prototype reinforces approved procedures; it
+      does not authorize real-world operations.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301189
+    m_Localized: '[SAT REVIEW] This unvalidated app demo alone'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301190
+    m_Localized: '[SAT REVIEW] The numeric demo score alone'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301191
+    m_Localized: '[SAT REVIEW] Approved site procedures and authorized training'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301192
+    m_Localized: '[SAT REVIEW] What governs real equipment and response decisions
+      at a worksite?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301193
+    m_Localized: '[SAT REVIEW] Real equipment decisions require approved site content;
+      the demo only permits its configured interaction.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301194
+    m_Localized: '[SAT REVIEW] In every fire regardless of conditions'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301195
+    m_Localized: '[SAT REVIEW] When this scenario explicitly permits it'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301196
+    m_Localized: '[SAT REVIEW] Whenever a trainee chooses it'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301197
+    m_Localized: '[SAT REVIEW] When does this demo permit the training equipment
+      interaction?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301198
+    m_Localized: '[SAT REVIEW] The terminal action combines safe exit and muster
+      in this demo fixture.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301199
+    m_Localized: '[SAT REVIEW] Select the blocked route'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301200
+    m_Localized: '[SAT REVIEW] Reach the safe exit and muster area'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301201
+    m_Localized: '[SAT REVIEW] Stop before completing the route'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301202
+    m_Localized: '[SAT REVIEW] Which action completes the configured Fire practice?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301203
+    m_Localized: '[SAT REVIEW] The fixture starts with hazard recognition.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301204
+    m_Localized: '[SAT REVIEW] Continue the task without responding'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301205
+    m_Localized: '[SAT REVIEW] Ignore it'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301206
+    m_Localized: '[SAT REVIEW] Identify the marked hazard'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301207
+    m_Localized: '[SAT REVIEW] In this demo, what should you do when the marked fire
+      hazard appears?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301208
+    m_Localized: '[SAT REVIEW] The re-entry action is marked criticalFail in the
+      supplied fixture.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301209
+    m_Localized: '[SAT REVIEW] A bonus action'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301210
+    m_Localized: '[SAT REVIEW] A configured critical error'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301211
+    m_Localized: '[SAT REVIEW] A required completion step'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301212
+    m_Localized: '[SAT REVIEW] How is re-entering the hazard treated by this scenario?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301213
+    m_Localized: '[SAT REVIEW] The supplied fixture identifies a safe exit and treats
+      blocked-route selection as a critical error.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301214
+    m_Localized: '[SAT REVIEW] The marked blocked route'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301215
+    m_Localized: '[SAT REVIEW] A route back into the hazard'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301216
+    m_Localized: '[SAT REVIEW] The marked safe exit and muster route'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301217
+    m_Localized: '[SAT REVIEW] Which route should be selected in the evacuation step?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301218
+    m_Localized: '[SAT REVIEW] The shared scenario definition transitions from recognition
+      to alarm.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301219
+    m_Localized: '[SAT REVIEW] The alarm step'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301220
+    m_Localized: '[SAT REVIEW] Certificate issuance'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301221
+    m_Localized: '[SAT REVIEW] Skip the alarm and go straight to the result'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301222
+    m_Localized: '[SAT REVIEW] Which comes after recognizing the hazard in the configured
+      sequence?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301223
+    m_Localized: '[SAT REVIEW] This unvalidated prototype does not grant entry authorization.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301224
+    m_Localized: '[SAT REVIEW] Approved site procedures and authorized personnel'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301225
+    m_Localized: '[SAT REVIEW] The demo score alone'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301226
+    m_Localized: '[SAT REVIEW] An unreviewed guess based on this app'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301227
+    m_Localized: '[SAT REVIEW] What must define real confined-space entry rules?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301228
+    m_Localized: '[SAT REVIEW] The fixture requires the configured buddy sequence
+      and marks proceeding alone as critical.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301229
+    m_Localized: '[SAT REVIEW] Proceed alone'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301230
+    m_Localized: '[SAT REVIEW] Confirm the configured buddy / attendant sequence'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301231
+    m_Localized: '[SAT REVIEW] Skip the step'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301232
+    m_Localized: '[SAT REVIEW] Which choice completes the buddy / attendant step?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301233
+    m_Localized: '[SAT REVIEW] The supplied fixture begins with recognizing the detector
+      alarm.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301234
+    m_Localized: '[SAT REVIEW] Enter the restricted area'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301235
+    m_Localized: '[SAT REVIEW] Ignore the alarm'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301236
+    m_Localized: '[SAT REVIEW] Inspect and recognize the alarm'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301237
+    m_Localized: '[SAT REVIEW] What is the first configured response to the demo
+      detector alarm?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301238
+    m_Localized: '[SAT REVIEW] The enter_restricted_zone action is marked criticalFail.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301239
+    m_Localized: '[SAT REVIEW] A bonus for speed'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301240
+    m_Localized: '[SAT REVIEW] A configured critical error'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301241
+    m_Localized: '[SAT REVIEW] An optional shortcut'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301242
+    m_Localized: '[SAT REVIEW] How is unauthorized restricted-area entry treated
+      in this demo?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301243
+    m_Localized: '[SAT REVIEW] The terminal action combines reporting and the marked
+      safe route.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301244
+    m_Localized: '[SAT REVIEW] Ignore reporting and the route'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301245
+    m_Localized: '[SAT REVIEW] Report and use the configured safe route'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301246
+    m_Localized: '[SAT REVIEW] Use the restricted route'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301247
+    m_Localized: '[SAT REVIEW] Which action completes this Gas scenario?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301248
+    m_Localized: '[SAT REVIEW] Actual PPE selection must use approved site procedures
+      and equipment requirements.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301249
+    m_Localized: '[SAT REVIEW] Any available option'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301250
+    m_Localized: '[SAT REVIEW] The explicitly configured demo PPE option'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301251
+    m_Localized: '[SAT REVIEW] The unapproved demo option'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301252
+    m_Localized: '[SAT REVIEW] Which PPE choice is correct in this software fixture?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301253
+    m_Localized: '[SAT REVIEW] The detector state is DEMO_ALARM_NO_THRESHOLD.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301254
+    m_Localized: '[SAT REVIEW] A threshold can be guessed from its colour'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301255
+    m_Localized: '[SAT REVIEW] No; real thresholds must come from approved site content'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301256
+    m_Localized: '[SAT REVIEW] Yes, it supplies a universal threshold'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301257
+    m_Localized: '[SAT REVIEW] Does this demo alarm provide a real safe-entry gas
+      threshold?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301258
+    m_Localized: '[SAT REVIEW] The boundary is a teaching aid; the app does not measure
+      real gas.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301259
+    m_Localized: '[SAT REVIEW] Yes, gas safety can be decided by colour alone'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301260
+    m_Localized: '[SAT REVIEW] No; it is a training overlay, not a measurement'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301261
+    m_Localized: '[SAT REVIEW] Yes, the overlay is a gas sensor'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301262
+    m_Localized: '[SAT REVIEW] Can a training boundary prove that gas outside it
+      is safe or visibly detectable?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301263
+    m_Localized: '[SAT REVIEW] Start assessment'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301264
+    m_Localized: '[SAT REVIEW] Training Competency Certificate'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301265
+    m_Localized: '[SAT REVIEW] DEMO ONLY. Legal recognition depends on the authorized
+      issuing organization and approved training program. This prototype uses a demo
+      issuer; replace it with provisioned production keys.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301266
+    m_Localized: '[SAT REVIEW] Choose an answer to continue.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301267
+    m_Localized: '[SAT REVIEW] Copy QR payload'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301268
+    m_Localized: '[SAT REVIEW] Refresher due'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301269
+    m_Localized: '[SAT REVIEW] Needs retraining'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301270
+    m_Localized: '[SAT REVIEW] Knowledge assessment'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301271
+    m_Localized: '[SAT REVIEW] Complete an assessment to schedule your refresher.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301272
+    m_Localized: '[SAT REVIEW] Passed'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301273
+    m_Localized: '[SAT REVIEW] Complete practice once to unlock assessment.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301274
+    m_Localized: '[SAT REVIEW] Refresher'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301275
+    m_Localized: '[SAT REVIEW] Refreshers'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301276
+    m_Localized: '[SAT REVIEW] Submit answer'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301277
+    m_Localized: '[SAT REVIEW] Trust data last updated'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301278
+    m_Localized: '[SAT REVIEW] Verify certificate offline'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301279
+    m_Localized: '[SAT REVIEW] Paste a certificate QR payload. Verification uses
+      the signed trust bundle stored on this device.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301280
+    m_Localized: "[SAT REVIEW] Invalid signature \xB7 certificate may have been altered"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301281
+    m_Localized: '[SAT REVIEW] Invalid or incomplete QR payload'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301282
+    m_Localized: "[SAT REVIEW] Signature valid \xB7 issuer revoked or outside validity
+      period"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301283
+    m_Localized: "[SAT REVIEW] Unknown issuer \xB7 signature could not be verified"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301284
+    m_Localized: '[SAT REVIEW] Unsupported certificate format'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301285
+    m_Localized: "[SAT REVIEW] Signature verified \xB7 trusted demo issuer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128968279388160
+    m_Localized: '[SAT REVIEW] Extinguisher readiness and exit access'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498180194304
+    m_Localized: '[SAT REVIEW] Camera permission denied. You can paste the QR payload
+      below to verify offline.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160768
+    m_Localized: '[SAT REVIEW] Camera unavailable. Paste the QR payload below to
+      verify offline.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160769
+    m_Localized: '[SAT REVIEW] Disable reminders'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160770
+    m_Localized: '[SAT REVIEW] Enable offline reminders'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160771
+    m_Localized: '[SAT REVIEW] Micro-training step'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160772
+    m_Localized: '[SAT REVIEW] Refresher completed'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160773
+    m_Localized: '[SAT REVIEW] Optional reminders tell you when short refresher training
+      is due. They work offline. Android battery settings can delay delivery; due
+      dates remain visible in Refreshers.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160774
+    m_Localized: '[SAT REVIEW] Short refresher training is due. Open SurakshaXR to
+      train offline.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160775
+    m_Localized: '[SAT REVIEW] SurakshaXR refresher'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160776
+    m_Localized: '[SAT REVIEW] Notification permission denied. Refreshers remain
+      available in the app.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160777
+    m_Localized: '[SAT REVIEW] Reminders disabled'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160778
+    m_Localized: '[SAT REVIEW] Reminders enabled'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160779
+    m_Localized: '[SAT REVIEW] Hold the entire QR code inside the camera view.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160780
+    m_Localized: '[SAT REVIEW] Scan QR with camera'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160781
+    m_Localized: '[SAT REVIEW] Start short refresher'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669020495872
+    m_Localized: "[SAT REVIEW] Checking AR on this device\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216128
+    m_Localized: '[SAT REVIEW] Camera permission denied. Training is available offline
+      in 3D.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216129
+    m_Localized: '[SAT REVIEW] Scan the ground and nearby surroundings with a slow
+      sweep. Normal hand movement is fine. Life-size equipment appears automatically
+      on detected ground. Keep a clear walking area.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216130
+    m_Localized: "[SAT REVIEW] Ground AR \xB7 camera surroundings"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216131
+    m_Localized: '[SAT REVIEW] Confirm & start AR'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216132
+    m_Localized: "[SAT REVIEW] Scan the training area \xB7 slowly look across the
+      ground"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216133
+    m_Localized: '[SAT REVIEW] Instructor surface selected. Confirm to anchor the
+      tabletop scene.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216134
+    m_Localized: '[SAT REVIEW] More visible ground is needed for this life-size scene.
+      Scan a wider clear area, or choose the virtual mine or 3D simulator.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216135
+    m_Localized: "[SAT REVIEW] Finding camera tracking\u2026 move gently toward a
+      textured, well-lit surface."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216136
+    m_Localized: '[SAT REVIEW] AR is unavailable or its service is not installed.
+      Continue offline in 3D.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216137
+    m_Localized: '[SAT REVIEW] Use 3D simulator'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379588051660800
+    m_Localized: '[SAT REVIEW] Rescan area'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 568220022562816
+    m_Localized: '[SAT REVIEW] Could not anchor this area. Rescan or use 3D simulation.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 568220060311552
+    m_Localized: "[SAT REVIEW] Securing the training area\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 568220060311553
+    m_Localized: '[SAT REVIEW] Continue this attempt in 3D'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 568220060311554
+    m_Localized: '[SAT REVIEW] Instructor fallback: tap a detected surface, then
+      confirm.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 568220060311555
+    m_Localized: "[SAT REVIEW] Environment ready \xB7 life-size scene"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 568220060311556
+    m_Localized: '[SAT REVIEW] Training area anchored'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 568220060311557
+    m_Localized: '[SAT REVIEW] Hide actions'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 568220060311558
+    m_Localized: '[SAT REVIEW] Show actions'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652809629696
+    m_Localized: '[SAT REVIEW] Read the instruction above, then choose an action
+      below.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904384
+    m_Localized: '[SAT REVIEW] Action recorded. Observe the scene response, then
+      continue. Assessment results appear at the end.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904385
+    m_Localized: "[SAT REVIEW] Compact AR ready \u2022 scaled training model"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904386
+    m_Localized: '[SAT REVIEW] ASSESSMENT'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904387
+    m_Localized: '[SAT REVIEW] Choose your experience'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904388
+    m_Localized: '[SAT REVIEW] Choose a module. Practise each decision, then check
+      your knowledge.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1268885716557824
+    m_Localized: '[SAT REVIEW] Instructor: automatic layout'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904390
+    m_Localized: '[SAT REVIEW] Open training'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904391
+    m_Localized: '[SAT REVIEW] PRACTICE'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904392
+    m_Localized: '[SAT REVIEW] SAFETY MODULE'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904393
+    m_Localized: '[SAT REVIEW] Detected surfaces'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652910292992
+    m_Localized: '[SAT REVIEW] Training sounds'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652910292993
+    m_Localized: '[SAT REVIEW] Your training workspace'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 643872446124032
+    m_Localized: '[SAT REVIEW] Move to brighter, even lighting. Keep scanning gently.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 643872530010112
+    m_Localized: '[SAT REVIEW] Look across textured ground. Sky, plain walls, glare
+      and darkness are difficult to track.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 643872530010113
+    m_Localized: '[SAT REVIEW] Slow the sweep slightly. You do not need to hold the
+      phone still.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657392676864
+    m_Localized: '[SAT REVIEW] Near the virtual mine edge. Turn back or use the joystick;
+      check real surroundings.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657468174336
+    m_Localized: "[SAT REVIEW] Camera view \xB7 training interaction paused"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657468174337
+    m_Localized: "[SAT REVIEW] Walk or use joystick \xB7 follow the gold task marker"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657468174338
+    m_Localized: '[SAT REVIEW] A virtual mine surrounds you. Look and walk in a clear
+      area, or travel with the joystick. Use View surroundings to check real obstacles.
+      Follow the bright gold marker for your current task. The floor is virtual,
+      not a room measurement.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657468174339
+    m_Localized: "[SAT REVIEW] Immersive Mine \xB7 phone tracking"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657468174340
+    m_Localized: '[SAT REVIEW] Virtual mine ready'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657468174341
+    m_Localized: '[SAT REVIEW] Return to mine'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657468174342
+    m_Localized: "[SAT REVIEW] Starting phone tracking\u2026 move gently and look
+      around"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657468174343
+    m_Localized: '[SAT REVIEW] View surroundings'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1256964401487872
+    m_Localized: '[SAT REVIEW] Selected'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1258407351115776
+    m_Localized: '[SAT REVIEW] Certificates'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1258407414030336
+    m_Localized: '[SAT REVIEW] History'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1258407414030337
+    m_Localized: '[SAT REVIEW] Train'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1258407414030338
+    m_Localized: '[SAT REVIEW] Settings'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1268885838192640
+    m_Localized: '[SAT REVIEW] Instructor: compact model'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1268885838192641
+    m_Localized: '[SAT REVIEW] Instructor: life-size layout'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1268885838192642
+    m_Localized: '[SAT REVIEW] Instructor: manual tabletop'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1268885838192643
+    m_Localized: '[SAT REVIEW] SurakshaXR could not start. Your existing data is
+      preserved. Restart the app; contact the trainer if the problem continues.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1287245690920960
+    m_Localized: '[SAT REVIEW] Gas and wind are simulated training visuals.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1287245762224128
+    m_Localized: '[SAT REVIEW] SAFE ZONE'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

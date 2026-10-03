@@ -1,0 +1,13 @@
+{
+  "moduleId": "fire-response",
+  "generalStepIds": ["fire_02_alarm", "fire_04_evacuate"],
+  "topicSteps": {
+    "fire.hazard_recognition": "fire_01_recognize",
+    "fire.alarm": "fire_02_alarm",
+    "fire.equipment": "fire_03_decision",
+    "fire.evacuation": "fire_04_evacuate",
+    "fire.sequence": "fire_04_evacuate"
+  },
+  "maximumTopics": 2,
+  "questionCount": 3
+}

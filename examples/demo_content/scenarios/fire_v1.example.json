@@ -1,0 +1,296 @@
+{
+  "scenarioId": "fire-response-demo-01",
+  "moduleId": "fire-response",
+  "version": "1.0.0",
+  "titleKey": "fire.scenario.demo01.title",
+  "descriptionKey": "fire.scenario.demo01.description",
+  "objectives": [
+    "fire.objective.recognize",
+    "fire.objective.alarm",
+    "fire.objective.safe_decision",
+    "fire.objective.evacuate"
+  ],
+  "anchors": [
+    {
+      "id": "origin",
+      "simPosition": [
+        0,
+        0,
+        0
+      ],
+      "simRotationEuler": [
+        0,
+        0,
+        0
+      ],
+      "arPlacementHint": "floor"
+    },
+    {
+      "id": "alarm",
+      "simPosition": [
+        2,
+        1.3,
+        1
+      ],
+      "simRotationEuler": [
+        0,
+        180,
+        0
+      ],
+      "arPlacementHint": "relative"
+    },
+    {
+      "id": "training_extinguisher",
+      "simPosition": [
+        -2,
+        0.5,
+        1
+      ],
+      "simRotationEuler": [
+        0,
+        0,
+        0
+      ],
+      "arPlacementHint": "relative"
+    },
+    {
+      "id": "safe_exit",
+      "simPosition": [
+        0,
+        1,
+        8
+      ],
+      "simRotationEuler": [
+        0,
+        180,
+        0
+      ],
+      "arPlacementHint": "relative"
+    },
+    {
+      "id": "blocked_exit",
+      "simPosition": [
+        7,
+        1,
+        0
+      ],
+      "simRotationEuler": [
+        0,
+        -90,
+        0
+      ],
+      "arPlacementHint": "relative"
+    },
+    {
+      "id": "muster",
+      "simPosition": [
+        0,
+        0,
+        12
+      ],
+      "simRotationEuler": [
+        0,
+        180,
+        0
+      ],
+      "arPlacementHint": "relative"
+    }
+  ],
+  "entities": [
+    {
+      "id": "fire_fx",
+      "kind": "hazard_fire",
+      "anchorId": "origin",
+      "prefabKey": "fx.fire.demo",
+      "labelKey": "fire.entity.fire",
+      "initiallyVisible": true
+    },
+    {
+      "id": "alarm_panel",
+      "kind": "interaction",
+      "anchorId": "alarm",
+      "prefabKey": "prop.alarm",
+      "labelKey": "fire.entity.alarm",
+      "initiallyVisible": true
+    },
+    {
+      "id": "extinguisher",
+      "kind": "training_equipment",
+      "anchorId": "training_extinguisher",
+      "prefabKey": "prop.extinguisher.training",
+      "labelKey": "fire.entity.extinguisher",
+      "initiallyVisible": true
+    },
+    {
+      "id": "safe_exit_marker",
+      "kind": "exit",
+      "anchorId": "safe_exit",
+      "prefabKey": "marker.exit.safe",
+      "labelKey": "common.safe_exit",
+      "initiallyVisible": true
+    },
+    {
+      "id": "blocked_exit_marker",
+      "kind": "exit",
+      "anchorId": "blocked_exit",
+      "prefabKey": "marker.exit.blocked",
+      "labelKey": "common.blocked_exit",
+      "initiallyVisible": true
+    }
+  ],
+  "steps": [
+    {
+      "stepId": "fire_01_recognize",
+      "objectiveKey": "fire.step.recognize.objective",
+      "narrationKey": "fire.step.recognize.narration",
+      "timeLimitSec": null,
+      "allowedActions": [
+        {
+          "actionId": "identify_hazard",
+          "result": "correct",
+          "scoreDelta": 20,
+          "feedbackKey": "fire.feedback.hazard_correct",
+          "weakTopicTags": [],
+          "nextStepId": "fire_02_alarm",
+          "criticalFail": false
+        },
+        {
+          "actionId": "ignore_hazard",
+          "result": "incorrect",
+          "scoreDelta": -10,
+          "feedbackKey": "fire.feedback.hazard_ignored",
+          "weakTopicTags": [
+            "fire.hazard_recognition"
+          ],
+          "nextStepId": null,
+          "criticalFail": false
+        }
+      ],
+      "visualCommands": [
+        {
+          "type": "show",
+          "entityId": "fire_fx"
+        }
+      ]
+    },
+    {
+      "stepId": "fire_02_alarm",
+      "objectiveKey": "fire.step.alarm.objective",
+      "narrationKey": "fire.step.alarm.narration",
+      "timeLimitSec": null,
+      "allowedActions": [
+        {
+          "actionId": "raise_alarm",
+          "result": "correct",
+          "scoreDelta": 20,
+          "feedbackKey": "fire.feedback.alarm_correct",
+          "weakTopicTags": [],
+          "nextStepId": "fire_03_decision",
+          "criticalFail": false
+        },
+        {
+          "actionId": "move_without_alarm",
+          "result": "incorrect",
+          "scoreDelta": -5,
+          "feedbackKey": "fire.feedback.alarm_missed",
+          "weakTopicTags": [
+            "fire.alarm"
+          ],
+          "nextStepId": null,
+          "criticalFail": false
+        }
+      ],
+      "visualCommands": [
+        {
+          "type": "enableInteraction",
+          "entityId": "alarm_panel"
+        }
+      ]
+    },
+    {
+      "stepId": "fire_03_decision",
+      "objectiveKey": "fire.step.decision.objective",
+      "narrationKey": "fire.step.decision.narration",
+      "timeLimitSec": null,
+      "allowedActions": [
+        {
+          "actionId": "use_demo_extinguisher_when_permitted",
+          "result": "correct",
+          "scoreDelta": 25,
+          "feedbackKey": "fire.feedback.equipment_correct",
+          "weakTopicTags": [],
+          "nextStepId": "fire_04_evacuate",
+          "criticalFail": false
+        },
+        {
+          "actionId": "take_blocked_route",
+          "result": "incorrect",
+          "scoreDelta": -20,
+          "feedbackKey": "fire.feedback.blocked_route",
+          "weakTopicTags": [
+            "fire.evacuation"
+          ],
+          "nextStepId": null,
+          "criticalFail": true
+        }
+      ],
+      "visualCommands": [
+        {
+          "type": "enableInteraction",
+          "entityId": "extinguisher"
+        }
+      ]
+    },
+    {
+      "stepId": "fire_04_evacuate",
+      "objectiveKey": "fire.step.evacuate.objective",
+      "narrationKey": "fire.step.evacuate.narration",
+      "timeLimitSec": null,
+      "allowedActions": [
+        {
+          "actionId": "reach_safe_exit_and_muster",
+          "result": "correct",
+          "scoreDelta": 35,
+          "feedbackKey": "fire.feedback.evacuation_correct",
+          "weakTopicTags": [],
+          "nextStepId": null,
+          "criticalFail": false
+        },
+        {
+          "actionId": "reenter_hazard",
+          "result": "incorrect",
+          "scoreDelta": -20,
+          "feedbackKey": "fire.feedback.reentry",
+          "weakTopicTags": [
+            "fire.evacuation",
+            "fire.sequence"
+          ],
+          "nextStepId": null,
+          "criticalFail": true
+        }
+      ],
+      "visualCommands": [
+        {
+          "type": "highlight",
+          "entityId": "safe_exit_marker"
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "passThreshold": 70,
+    "categories": {
+      "hazard_recognition": 20,
+      "alarm_notification": 20,
+      "decision_equipment": 25,
+      "evacuation_sequence": 35
+    },
+    "criticalFailForcesFail": true
+  },
+  "contentValidation": {
+    "status": "demo-unvalidated",
+    "version": "demo-1",
+    "reviewer": null,
+    "reviewedAt": null
+  }
+}

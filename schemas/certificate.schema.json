@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://surakshaxr.local/schemas/certificate.schema.json",
+  "title": "SurakshaXR Certificate Payload",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "v",
+    "certificateId",
+    "workerId",
+    "workerCode",
+    "workerDisplayName",
+    "moduleId",
+    "moduleVersion",
+    "attemptId",
+    "score",
+    "issuedAt",
+    "signerId"
+  ],
+  "properties": {
+    "v": {
+      "type": "integer",
+      "const": 1
+    },
+    "certificateId": {
+      "type": "string"
+    },
+    "workerId": {
+      "type": "string"
+    },
+    "workerCode": {
+      "type": "string"
+    },
+    "workerDisplayName": {
+      "type": "string"
+    },
+    "moduleId": {
+      "type": "string"
+    },
+    "moduleVersion": {
+      "type": "string"
+    },
+    "attemptId": {
+      "type": "string"
+    },
+    "score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "issuedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "refresherDueAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "signerId": {
+      "type": "string"
+    }
+  }
+}

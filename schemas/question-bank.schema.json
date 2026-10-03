@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://surakshaxr.local/schemas/question-bank.schema.json",
+  "title": "SurakshaXR Question Bank",
+  "type": "object",
+  "required": [
+    "questionBankId",
+    "moduleId",
+    "version",
+    "questions"
+  ],
+  "properties": {
+    "questionBankId": {
+      "type": "string"
+    },
+    "moduleId": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "promptKey",
+          "options",
+          "correctOptionIds",
+          "explanationKey",
+          "topicTags"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "promptKey": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "textKey"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "textKey": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "correctOptionIds": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "explanationKey": {
+            "type": "string"
+          },
+          "topicTags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "difficulty": {
+            "type": "string",
+            "enum": [
+              "basic",
+              "application"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

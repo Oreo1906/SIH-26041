@@ -1,0 +1,16 @@
+{
+  "v": 1,
+  "bundleVersion": 1,
+  "issuedAt": "2026-09-29T04:12:21Z",
+  "signers": [
+    {
+      "signerId": "surakshaxr-demo-issuer-v1",
+      "displayName": "DEMO ONLY - SurakshaXR prototype issuer",
+      "publicKeyB64": "0A0/NOeC9bNXUzx+5o00ClJUH3T2f2ZwNa9FZO2tTJQ=",
+      "validFrom": "2026-01-01T00:00:00Z",
+      "validTo": null,
+      "revoked": false
+    }
+  ],
+  "rootSignature": "0Ob4enUzRNqqR6iIgFUl4lrdM1Fqd18jqV3mtvwSxQ20K4hs2cuU8WfgsOpi8an7iUu5nQU6wqEp-YDuLM18Bg"
+}

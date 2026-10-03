@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "surakshaxr-backend"
+version = "0.1.0"
+description = "Optional sync and compliance backend for SurakshaXR"
+requires-python = ">=3.13"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements-runtime.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+exclude = ["app.tests*"]
+
+[tool.pytest.ini_options]
+testpaths = ["app/tests"]
+addopts = "-ra"

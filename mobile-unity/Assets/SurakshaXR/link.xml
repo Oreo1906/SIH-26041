@@ -1,0 +1,16 @@
+<linker>
+  <assembly fullname="SurakshaXR.Domain" preserve="all" />
+  <assembly fullname="SurakshaXR.Infrastructure" preserve="all" />
+  <!-- Runtime CreatePrimitive also creates colliders before decorative parts
+       disable them. IL2CPP cannot infer these native factory references. -->
+  <assembly fullname="UnityEngine.PhysicsModule">
+    <type fullname="UnityEngine.SphereCollider" preserve="all" />
+    <type fullname="UnityEngine.CapsuleCollider" preserve="all" />
+    <type fullname="UnityEngine.BoxCollider" preserve="all" />
+    <type fullname="UnityEngine.MeshCollider" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.ParticleSystemModule">
+    <type fullname="UnityEngine.ParticleSystem" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemRenderer" preserve="all" />
+  </assembly>
+</linker>

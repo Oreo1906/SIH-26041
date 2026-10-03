@@ -1,0 +1,8 @@
+{
+  "name": "SurakshaXR.Domain",
+  "rootNamespace": "SurakshaXR.Domain",
+  "references": [],
+  "overrideReferences": true,
+  "precompiledReferences": ["Newtonsoft.Json.dll"],
+  "noEngineReferences": true
+}

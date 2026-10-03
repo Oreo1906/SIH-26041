@@ -1,0 +1,8 @@
+# Bootstrap dependency input. requirements.txt is the exact tested environment.
+fastapi
+uvicorn
+httpx
+pytest
+jsonschema
+build
+setuptools

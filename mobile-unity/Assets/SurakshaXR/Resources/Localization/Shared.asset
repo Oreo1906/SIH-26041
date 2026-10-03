@@ -1,0 +1,1308 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Shared
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: Preview
+  m_TableCollectionNameGuidString: 29b563ca655de0146a6dda9e5747f945
+  m_Entries:
+  - m_Id: 670756864
+    m_Key: action.confirm_buddy_attendant_sequence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721088512
+    m_Key: action.enter_restricted_zone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477120
+    m_Key: action.identify_hazard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477121
+    m_Key: action.ignore_detector_alarm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477122
+    m_Key: action.ignore_hazard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477123
+    m_Key: action.inspect_detector_alarm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477124
+    m_Key: action.move_without_alarm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477125
+    m_Key: action.proceed_alone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477126
+    m_Key: action.raise_alarm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477127
+    m_Key: action.reach_safe_exit_and_muster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477128
+    m_Key: action.recognize_restricted_zone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477129
+    m_Key: action.reenter_hazard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477130
+    m_Key: action.report_and_use_safe_route
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477131
+    m_Key: action.select_configured_ppe_option
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477132
+    m_Key: action.select_unapproved_demo_option
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477133
+    m_Key: action.take_blocked_route
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477134
+    m_Key: action.use_demo_extinguisher_when_permitted
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477135
+    m_Key: action.use_restricted_route
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477136
+    m_Key: category.alarm_notification
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477137
+    m_Key: category.alarm_recognition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477138
+    m_Key: category.buddy_system
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477139
+    m_Key: category.decision_equipment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477140
+    m_Key: category.evacuation_reporting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477141
+    m_Key: category.evacuation_sequence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477142
+    m_Key: category.hazard_recognition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477143
+    m_Key: category.hazard_zone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477144
+    m_Key: category.ppe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477145
+    m_Key: common.blocked_exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477146
+    m_Key: common.safe_exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477147
+    m_Key: common.safe_route
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477148
+    m_Key: fire.entity.alarm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477149
+    m_Key: fire.entity.extinguisher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477150
+    m_Key: fire.entity.fire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477151
+    m_Key: fire.feedback.alarm_correct
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477152
+    m_Key: fire.feedback.alarm_missed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477153
+    m_Key: fire.feedback.blocked_route
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477154
+    m_Key: fire.feedback.equipment_correct
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477155
+    m_Key: fire.feedback.evacuation_correct
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477156
+    m_Key: fire.feedback.hazard_correct
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477157
+    m_Key: fire.feedback.hazard_ignored
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477158
+    m_Key: fire.feedback.reentry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477159
+    m_Key: fire.module.description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477160
+    m_Key: fire.module.title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477161
+    m_Key: fire.objective.alarm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477162
+    m_Key: fire.objective.evacuate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477163
+    m_Key: fire.objective.recognize
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477164
+    m_Key: fire.objective.safe_decision
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477165
+    m_Key: fire.scenario.demo01.description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477166
+    m_Key: fire.scenario.demo01.title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477167
+    m_Key: fire.step.alarm.narration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477168
+    m_Key: fire.step.alarm.objective
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477169
+    m_Key: fire.step.decision.narration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477170
+    m_Key: fire.step.decision.objective
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477171
+    m_Key: fire.step.evacuate.narration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477172
+    m_Key: fire.step.evacuate.objective
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477173
+    m_Key: fire.step.recognize.narration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477174
+    m_Key: fire.step.recognize.objective
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477175
+    m_Key: gas.entity.buddy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477176
+    m_Key: gas.entity.detector
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477177
+    m_Key: gas.entity.ppe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477178
+    m_Key: gas.entity.restricted_zone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477179
+    m_Key: gas.feedback.alarm_correct
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477180
+    m_Key: gas.feedback.alarm_ignored
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477181
+    m_Key: gas.feedback.buddy_correct
+    m_Metadata:
+      m_Items: []
+  - m_Id: 729477182
+    m_Key: gas.feedback.buddy_missed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671424
+    m_Key: gas.feedback.evacuate_correct
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671425
+    m_Key: gas.feedback.evacuate_incorrect
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671426
+    m_Key: gas.feedback.ppe_correct
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671427
+    m_Key: gas.feedback.ppe_incorrect
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671428
+    m_Key: gas.feedback.unauthorized_entry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671429
+    m_Key: gas.feedback.zone_correct
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671430
+    m_Key: gas.module.description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671431
+    m_Key: gas.module.title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671432
+    m_Key: gas.objective.alarm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671433
+    m_Key: gas.objective.buddy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671434
+    m_Key: gas.objective.evacuate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671435
+    m_Key: gas.objective.hazard_zone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671436
+    m_Key: gas.objective.ppe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671437
+    m_Key: gas.scenario.demo01.description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671438
+    m_Key: gas.scenario.demo01.title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671439
+    m_Key: gas.step.alarm.narration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671440
+    m_Key: gas.step.alarm.objective
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671441
+    m_Key: gas.step.buddy.narration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671442
+    m_Key: gas.step.buddy.objective
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671443
+    m_Key: gas.step.evacuate.narration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671444
+    m_Key: gas.step.evacuate.objective
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671445
+    m_Key: gas.step.ppe.narration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671446
+    m_Key: gas.step.ppe.objective
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671447
+    m_Key: gas.step.zone.narration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671448
+    m_Key: gas.step.zone.objective
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671449
+    m_Key: topic.fire.alarm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671450
+    m_Key: topic.fire.evacuation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671451
+    m_Key: topic.fire.hazard_recognition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671452
+    m_Key: topic.fire.sequence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671453
+    m_Key: topic.gas.alarm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671454
+    m_Key: topic.gas.buddy_system
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671455
+    m_Key: topic.gas.confined_space
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671456
+    m_Key: topic.gas.evacuation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671457
+    m_Key: topic.gas.hazard_zone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671458
+    m_Key: topic.gas.ppe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671459
+    m_Key: ui.add_worker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671460
+    m_Key: ui.again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671461
+    m_Key: ui.assessment_pending
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671462
+    m_Key: ui.back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671463
+    m_Key: ui.brand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671464
+    m_Key: ui.certificates
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671465
+    m_Key: ui.continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671466
+    m_Key: ui.controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671467
+    m_Key: ui.demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671468
+    m_Key: ui.display_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671469
+    m_Key: ui.distance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671470
+    m_Key: ui.empty_certificates
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671471
+    m_Key: ui.empty_history
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671472
+    m_Key: ui.error
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671473
+    m_Key: ui.exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671474
+    m_Key: ui.fallback
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671475
+    m_Key: ui.history
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671476
+    m_Key: ui.home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671477
+    m_Key: ui.interact
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671478
+    m_Key: ui.invalid_profile
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671479
+    m_Key: ui.language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671480
+    m_Key: ui.local_data
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671481
+    m_Key: ui.no_weak_topics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671482
+    m_Key: ui.none
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671483
+    m_Key: ui.offline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671484
+    m_Key: ui.pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671485
+    m_Key: ui.paused
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671486
+    m_Key: ui.pending
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671487
+    m_Key: ui.practice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671488
+    m_Key: ui.practice_done
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671489
+    m_Key: ui.preview
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671490
+    m_Key: ui.result
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671491
+    m_Key: ui.resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671492
+    m_Key: ui.retry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671493
+    m_Key: ui.safety
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671494
+    m_Key: ui.save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671495
+    m_Key: ui.saved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671496
+    m_Key: ui.score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671497
+    m_Key: ui.settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671498
+    m_Key: ui.tagline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671499
+    m_Key: ui.translation_notice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671500
+    m_Key: ui.weak_topics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671501
+    m_Key: ui.worker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 733671502
+    m_Key: ui.worker_code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254790529024
+    m_Key: fire.question.alarm.explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301184
+    m_Key: fire.question.alarm.option.raise
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301185
+    m_Key: fire.question.alarm.option.skip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301186
+    m_Key: fire.question.alarm.option.walk_away
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301187
+    m_Key: fire.question.alarm.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301188
+    m_Key: fire.question.approved_content.explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301189
+    m_Key: fire.question.approved_content.option.demo_alone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301190
+    m_Key: fire.question.approved_content.option.score_only
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301191
+    m_Key: fire.question.approved_content.option.site_sop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301192
+    m_Key: fire.question.approved_content.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301193
+    m_Key: fire.question.equipment_permission.explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301194
+    m_Key: fire.question.equipment_permission.option.always
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301195
+    m_Key: fire.question.equipment_permission.option.configured
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301196
+    m_Key: fire.question.equipment_permission.option.unreviewed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301197
+    m_Key: fire.question.equipment_permission.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301198
+    m_Key: fire.question.muster.explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301199
+    m_Key: fire.question.muster.option.blocked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301200
+    m_Key: fire.question.muster.option.muster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301201
+    m_Key: fire.question.muster.option.stop_midway
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301202
+    m_Key: fire.question.muster.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301203
+    m_Key: fire.question.recognition.explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301204
+    m_Key: fire.question.recognition.option.continue_work
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301205
+    m_Key: fire.question.recognition.option.ignore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301206
+    m_Key: fire.question.recognition.option.recognize
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301207
+    m_Key: fire.question.recognition.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301208
+    m_Key: fire.question.reentry.explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301209
+    m_Key: fire.question.reentry.option.bonus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301210
+    m_Key: fire.question.reentry.option.critical
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301211
+    m_Key: fire.question.reentry.option.required
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301212
+    m_Key: fire.question.reentry.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301213
+    m_Key: fire.question.route.explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301214
+    m_Key: fire.question.route.option.blocked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301215
+    m_Key: fire.question.route.option.hazard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301216
+    m_Key: fire.question.route.option.safe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301217
+    m_Key: fire.question.route.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301218
+    m_Key: fire.question.sequence.explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301219
+    m_Key: fire.question.sequence.option.alarm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301220
+    m_Key: fire.question.sequence.option.certificate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301221
+    m_Key: fire.question.sequence.option.muster_first
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301222
+    m_Key: fire.question.sequence.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301223
+    m_Key: gas.question.authority.explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301224
+    m_Key: gas.question.authority.option.approved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301225
+    m_Key: gas.question.authority.option.demo_score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301226
+    m_Key: gas.question.authority.option.guess
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301227
+    m_Key: gas.question.authority.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301228
+    m_Key: gas.question.buddy.explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301229
+    m_Key: gas.question.buddy.option.alone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301230
+    m_Key: gas.question.buddy.option.confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301231
+    m_Key: gas.question.buddy.option.skip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301232
+    m_Key: gas.question.buddy.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301233
+    m_Key: gas.question.detector.explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301234
+    m_Key: gas.question.detector.option.enter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301235
+    m_Key: gas.question.detector.option.ignore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301236
+    m_Key: gas.question.detector.option.inspect
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301237
+    m_Key: gas.question.detector.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301238
+    m_Key: gas.question.entry.explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301239
+    m_Key: gas.question.entry.option.bonus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301240
+    m_Key: gas.question.entry.option.critical
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301241
+    m_Key: gas.question.entry.option.optional
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301242
+    m_Key: gas.question.entry.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301243
+    m_Key: gas.question.evacuate.explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301244
+    m_Key: gas.question.evacuate.option.ignore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301245
+    m_Key: gas.question.evacuate.option.report_safe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301246
+    m_Key: gas.question.evacuate.option.restricted
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301247
+    m_Key: gas.question.evacuate.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301248
+    m_Key: gas.question.ppe.explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301249
+    m_Key: gas.question.ppe.option.any
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301250
+    m_Key: gas.question.ppe.option.configured
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301251
+    m_Key: gas.question.ppe.option.unapproved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301252
+    m_Key: gas.question.ppe.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301253
+    m_Key: gas.question.threshold.explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301254
+    m_Key: gas.question.threshold.option.guess
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301255
+    m_Key: gas.question.threshold.option.no
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301256
+    m_Key: gas.question.threshold.option.yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301257
+    m_Key: gas.question.threshold.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301258
+    m_Key: gas.question.visible_gas.explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301259
+    m_Key: gas.question.visible_gas.option.colour
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301260
+    m_Key: gas.question.visible_gas.option.no
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301261
+    m_Key: gas.question.visible_gas.option.yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301262
+    m_Key: gas.question.visible_gas.prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301263
+    m_Key: ui.assessment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301264
+    m_Key: ui.certificate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301265
+    m_Key: ui.certificate_notice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301266
+    m_Key: ui.choose_answer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301267
+    m_Key: ui.copy_qr
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301268
+    m_Key: ui.due
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301269
+    m_Key: ui.failed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301270
+    m_Key: ui.knowledge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301271
+    m_Key: ui.no_refreshers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301272
+    m_Key: ui.passed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301273
+    m_Key: ui.practice_required
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301274
+    m_Key: ui.refresher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301275
+    m_Key: ui.refreshers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301276
+    m_Key: ui.submit_answer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301277
+    m_Key: ui.trust_updated
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301278
+    m_Key: ui.verify
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301279
+    m_Key: ui.verify_help
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301280
+    m_Key: verify.INVALID_SIGNATURE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301281
+    m_Key: verify.PARSE_ERROR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301282
+    m_Key: verify.SIGNER_NOT_TRUSTED
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301283
+    m_Key: verify.UNKNOWN_SIGNER_UNVERIFIED
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301284
+    m_Key: verify.UNSUPPORTED_VERSION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128254958301285
+    m_Key: verify.VERIFIED_TRUSTED
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128968279388160
+    m_Key: topic.fire.equipment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498180194304
+    m_Key: ui.camera_denied
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160768
+    m_Key: ui.camera_unavailable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160769
+    m_Key: ui.disable_reminders
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160770
+    m_Key: ui.enable_reminders
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160771
+    m_Key: ui.micro_step
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160772
+    m_Key: ui.refresher_complete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160773
+    m_Key: ui.reminder_help
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160774
+    m_Key: ui.reminder_message
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160775
+    m_Key: ui.reminder_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160776
+    m_Key: ui.reminders_denied
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160777
+    m_Key: ui.reminders_disabled
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160778
+    m_Key: ui.reminders_enabled
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160779
+    m_Key: ui.scan_help
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160780
+    m_Key: ui.scan_qr
+    m_Metadata:
+      m_Items: []
+  - m_Id: 215498352160781
+    m_Key: ui.start_refresher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669020495872
+    m_Key: ui.ar_checking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216128
+    m_Key: ui.ar_denied
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216129
+    m_Key: ui.ar_help
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216130
+    m_Key: ui.ar_mode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216131
+    m_Key: ui.ar_place
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216132
+    m_Key: ui.ar_scan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216133
+    m_Key: ui.ar_surface
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216134
+    m_Key: ui.ar_timeout
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216135
+    m_Key: ui.ar_tracking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216136
+    m_Key: ui.ar_unavailable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373669079216137
+    m_Key: ui.simulator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379588051660800
+    m_Key: ui.ar_reset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 568220022562816
+    m_Key: ui.ar_anchor_failed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 568220060311552
+    m_Key: ui.ar_anchoring
+    m_Metadata:
+      m_Items: []
+  - m_Id: 568220060311553
+    m_Key: ui.ar_continue_3d
+    m_Metadata:
+      m_Items: []
+  - m_Id: 568220060311554
+    m_Key: ui.ar_manual_help
+    m_Metadata:
+      m_Items: []
+  - m_Id: 568220060311555
+    m_Key: ui.ar_ready
+    m_Metadata:
+      m_Items: []
+  - m_Id: 568220060311556
+    m_Key: ui.ar_running
+    m_Metadata:
+      m_Items: []
+  - m_Id: 568220060311557
+    m_Key: ui.close_actions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 568220060311558
+    m_Key: ui.open_actions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652809629696
+    m_Key: ui.action_instruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904384
+    m_Key: ui.action_recorded
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904385
+    m_Key: ui.ar_compact_ready
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904386
+    m_Key: ui.assessment_label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904387
+    m_Key: ui.choose_experience
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904388
+    m_Key: ui.home_guidance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904389
+    m_Key: ui.offline_badge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904390
+    m_Key: ui.open_module
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904391
+    m_Key: ui.practice_label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904392
+    m_Key: ui.safety_module
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652901904393
+    m_Key: ui.surfaces
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652910292992
+    m_Key: ui.training_sounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 642652910292993
+    m_Key: ui.welcome
+    m_Metadata:
+      m_Items: []
+  - m_Id: 643872446124032
+    m_Key: ui.ar_more_light
+    m_Metadata:
+      m_Items: []
+  - m_Id: 643872530010112
+    m_Key: ui.ar_more_texture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 643872530010113
+    m_Key: ui.ar_slow_sweep
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657392676864
+    m_Key: ui.mine_boundary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657468174336
+    m_Key: ui.mine_camera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657468174337
+    m_Key: ui.mine_controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657468174338
+    m_Key: ui.mine_help
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657468174339
+    m_Key: ui.mine_mode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657468174340
+    m_Key: ui.mine_ready
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657468174341
+    m_Key: ui.mine_return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657468174342
+    m_Key: ui.mine_tracking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 646657468174343
+    m_Key: ui.view_surroundings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1256964401487872
+    m_Key: ui.selected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1258407351115776
+    m_Key: ui.nav_certificates
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1258407414030336
+    m_Key: ui.nav_history
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1258407414030337
+    m_Key: ui.nav_home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1258407414030338
+    m_Key: ui.nav_settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1268885716557824
+    m_Key: ui.instructor_auto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1268885838192640
+    m_Key: ui.instructor_compact
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1268885838192641
+    m_Key: ui.instructor_life_size
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1268885838192642
+    m_Key: ui.instructor_manual
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1268885838192643
+    m_Key: ui.startup_error
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1287245690920960
+    m_Key: ui.layout_gas_visual
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1287245762224128
+    m_Key: ui.layout_safe_zone
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8133651113595633664
+  references:
+    version: 2
+    RefIds:
+    - rid: 8133651113595633664
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1790625333384

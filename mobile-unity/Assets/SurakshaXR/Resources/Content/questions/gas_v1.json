@@ -1,0 +1,215 @@
+{
+  "questionBankId": "gas-questions-v1",
+  "moduleId": "gas-confined-space",
+  "version": "1.0.0",
+  "questions": [
+    {
+      "id": "gas.question.detector",
+      "promptKey": "gas.question.detector.prompt",
+      "options": [
+        {
+          "id": "gas.question.detector.ignore",
+          "textKey": "gas.question.detector.option.ignore"
+        },
+        {
+          "id": "gas.question.detector.inspect",
+          "textKey": "gas.question.detector.option.inspect"
+        },
+        {
+          "id": "gas.question.detector.enter",
+          "textKey": "gas.question.detector.option.enter"
+        }
+      ],
+      "correctOptionIds": [
+        "gas.question.detector.inspect"
+      ],
+      "explanationKey": "gas.question.detector.explanation",
+      "topicTags": [
+        "gas.alarm"
+      ],
+      "difficulty": "application"
+    },
+    {
+      "id": "gas.question.threshold",
+      "promptKey": "gas.question.threshold.prompt",
+      "options": [
+        {
+          "id": "gas.question.threshold.yes",
+          "textKey": "gas.question.threshold.option.yes"
+        },
+        {
+          "id": "gas.question.threshold.guess",
+          "textKey": "gas.question.threshold.option.guess"
+        },
+        {
+          "id": "gas.question.threshold.no",
+          "textKey": "gas.question.threshold.option.no"
+        }
+      ],
+      "correctOptionIds": [
+        "gas.question.threshold.no"
+      ],
+      "explanationKey": "gas.question.threshold.explanation",
+      "topicTags": [
+        "gas.alarm"
+      ],
+      "difficulty": "application"
+    },
+    {
+      "id": "gas.question.visible_gas",
+      "promptKey": "gas.question.visible_gas.prompt",
+      "options": [
+        {
+          "id": "gas.question.visible_gas.no",
+          "textKey": "gas.question.visible_gas.option.no"
+        },
+        {
+          "id": "gas.question.visible_gas.yes",
+          "textKey": "gas.question.visible_gas.option.yes"
+        },
+        {
+          "id": "gas.question.visible_gas.colour",
+          "textKey": "gas.question.visible_gas.option.colour"
+        }
+      ],
+      "correctOptionIds": [
+        "gas.question.visible_gas.no"
+      ],
+      "explanationKey": "gas.question.visible_gas.explanation",
+      "topicTags": [
+        "gas.hazard_zone"
+      ],
+      "difficulty": "application"
+    },
+    {
+      "id": "gas.question.entry",
+      "promptKey": "gas.question.entry.prompt",
+      "options": [
+        {
+          "id": "gas.question.entry.optional",
+          "textKey": "gas.question.entry.option.optional"
+        },
+        {
+          "id": "gas.question.entry.critical",
+          "textKey": "gas.question.entry.option.critical"
+        },
+        {
+          "id": "gas.question.entry.bonus",
+          "textKey": "gas.question.entry.option.bonus"
+        }
+      ],
+      "correctOptionIds": [
+        "gas.question.entry.critical"
+      ],
+      "explanationKey": "gas.question.entry.explanation",
+      "topicTags": [
+        "gas.confined_space"
+      ],
+      "difficulty": "application"
+    },
+    {
+      "id": "gas.question.ppe",
+      "promptKey": "gas.question.ppe.prompt",
+      "options": [
+        {
+          "id": "gas.question.ppe.any",
+          "textKey": "gas.question.ppe.option.any"
+        },
+        {
+          "id": "gas.question.ppe.unapproved",
+          "textKey": "gas.question.ppe.option.unapproved"
+        },
+        {
+          "id": "gas.question.ppe.configured",
+          "textKey": "gas.question.ppe.option.configured"
+        }
+      ],
+      "correctOptionIds": [
+        "gas.question.ppe.configured"
+      ],
+      "explanationKey": "gas.question.ppe.explanation",
+      "topicTags": [
+        "gas.ppe"
+      ],
+      "difficulty": "application"
+    },
+    {
+      "id": "gas.question.buddy",
+      "promptKey": "gas.question.buddy.prompt",
+      "options": [
+        {
+          "id": "gas.question.buddy.alone",
+          "textKey": "gas.question.buddy.option.alone"
+        },
+        {
+          "id": "gas.question.buddy.confirm",
+          "textKey": "gas.question.buddy.option.confirm"
+        },
+        {
+          "id": "gas.question.buddy.skip",
+          "textKey": "gas.question.buddy.option.skip"
+        }
+      ],
+      "correctOptionIds": [
+        "gas.question.buddy.confirm"
+      ],
+      "explanationKey": "gas.question.buddy.explanation",
+      "topicTags": [
+        "gas.buddy_system"
+      ],
+      "difficulty": "application"
+    },
+    {
+      "id": "gas.question.evacuate",
+      "promptKey": "gas.question.evacuate.prompt",
+      "options": [
+        {
+          "id": "gas.question.evacuate.report_safe",
+          "textKey": "gas.question.evacuate.option.report_safe"
+        },
+        {
+          "id": "gas.question.evacuate.restricted",
+          "textKey": "gas.question.evacuate.option.restricted"
+        },
+        {
+          "id": "gas.question.evacuate.ignore",
+          "textKey": "gas.question.evacuate.option.ignore"
+        }
+      ],
+      "correctOptionIds": [
+        "gas.question.evacuate.report_safe"
+      ],
+      "explanationKey": "gas.question.evacuate.explanation",
+      "topicTags": [
+        "gas.evacuation"
+      ],
+      "difficulty": "application"
+    },
+    {
+      "id": "gas.question.authority",
+      "promptKey": "gas.question.authority.prompt",
+      "options": [
+        {
+          "id": "gas.question.authority.demo_score",
+          "textKey": "gas.question.authority.option.demo_score"
+        },
+        {
+          "id": "gas.question.authority.approved",
+          "textKey": "gas.question.authority.option.approved"
+        },
+        {
+          "id": "gas.question.authority.guess",
+          "textKey": "gas.question.authority.option.guess"
+        }
+      ],
+      "correctOptionIds": [
+        "gas.question.authority.approved"
+      ],
+      "explanationKey": "gas.question.authority.explanation",
+      "topicTags": [
+        "gas.confined_space"
+      ],
+      "difficulty": "application"
+    }
+  ]
+}

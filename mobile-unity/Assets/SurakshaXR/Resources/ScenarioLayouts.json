@@ -1,0 +1,54 @@
+{
+  "templates": [
+    {
+      "moduleId": "fire-response",
+      "arrowScale": 0.6,
+      "hazardEntityId": "fire_fx",
+      "safeEntityId": "safe_exit_marker",
+      "hazardRadius": 1.45,
+      "routeSpacing": 0.65,
+      "routeClearance": 0.4,
+      "minStationClearance": 0.75,
+      "simulatedWind": {"x": 0, "y": 0, "z": 0},
+      "points": [
+        {"entityId": "fire_fx", "localPosition": {"x": 0, "y": 0, "z": 4.5}, "localYaw": 0, "footprintRadius": 1.45},
+        {"entityId": "extinguisher", "localPosition": {"x": -2.8, "y": 0, "z": 1.3}, "localYaw": 0, "footprintRadius": 0.45},
+        {"entityId": "alarm_panel", "localPosition": {"x": 2.0, "y": 0, "z": 1.8}, "localYaw": 180, "footprintRadius": 0.4},
+        {"entityId": "safe_exit_marker", "localPosition": {"x": 4.2, "y": 0, "z": 5.8}, "localYaw": 180, "footprintRadius": 1.35},
+        {"entityId": "blocked_exit_marker", "localPosition": {"x": -4.2, "y": 0, "z": 5.8}, "localYaw": 180, "footprintRadius": 1.75}
+      ],
+      "path": [
+        {"x": 0.4, "y": 0, "z": 0.4},
+        {"x": 3.8, "y": 0, "z": 0.4},
+        {"x": 5.0, "y": 0, "z": 2.6},
+        {"x": 4.2, "y": 0, "z": 5.8}
+      ],
+      "requiredSupportPoints": [{"x": 0, "y": 0, "z": 0.5}]
+    },
+    {
+      "moduleId": "gas-confined-space",
+      "arrowScale": 0.6,
+      "hazardEntityId": "restricted_boundary",
+      "safeEntityId": "safe_route_marker",
+      "hazardRadius": 2.35,
+      "routeSpacing": 0.65,
+      "routeClearance": 0.4,
+      "minStationClearance": 0.75,
+      "simulatedWind": {"x": -1, "y": 0, "z": 0},
+      "points": [
+        {"entityId": "restricted_boundary", "localPosition": {"x": 0, "y": 0, "z": 4.7}, "localYaw": 0, "footprintRadius": 2.35},
+        {"entityId": "ppe_choices", "localPosition": {"x": -2.8, "y": 0, "z": 1.3}, "localYaw": 0, "footprintRadius": 0.75},
+        {"entityId": "detector_ui", "localPosition": {"x": 2.0, "y": 0, "z": 1.8}, "localYaw": 180, "footprintRadius": 0.4},
+        {"entityId": "buddy_token", "localPosition": {"x": -4.95, "y": 0, "z": 1.3}, "localYaw": 0, "footprintRadius": 0.55},
+        {"entityId": "safe_route_marker", "localPosition": {"x": 4.5, "y": 0, "z": 6.0}, "localYaw": 180, "footprintRadius": 1.35}
+      ],
+      "path": [
+        {"x": 0.4, "y": 0, "z": 0.4},
+        {"x": 3.8, "y": 0, "z": 0.4},
+        {"x": 5.3, "y": 0, "z": 2.8},
+        {"x": 4.5, "y": 0, "z": 6.0}
+      ],
+      "requiredSupportPoints": [{"x": 0, "y": 0, "z": 0.5}]
+    }
+  ]
+}

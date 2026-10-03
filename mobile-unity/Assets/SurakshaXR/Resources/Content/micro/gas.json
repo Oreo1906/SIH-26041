@@ -1,0 +1,14 @@
+{
+  "moduleId": "gas-confined-space",
+  "generalStepIds": ["gas_01_alarm", "gas_05_evacuate"],
+  "topicSteps": {
+    "gas.alarm": "gas_01_alarm",
+    "gas.hazard_zone": "gas_02_zone",
+    "gas.confined_space": "gas_02_zone",
+    "gas.ppe": "gas_03_ppe",
+    "gas.buddy_system": "gas_04_buddy",
+    "gas.evacuation": "gas_05_evacuate"
+  },
+  "maximumTopics": 2,
+  "questionCount": 3
+}

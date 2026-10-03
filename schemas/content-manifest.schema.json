@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://surakshaxr.local/schemas/content-manifest.schema.json",
+  "title": "SurakshaXR Content Manifest",
+  "type": "object",
+  "required": [
+    "contentVersion",
+    "generatedAt",
+    "files"
+  ],
+  "properties": {
+    "contentVersion": {
+      "type": "string"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{64}$"
+          }
+        }
+      }
+    }
+  }
+}

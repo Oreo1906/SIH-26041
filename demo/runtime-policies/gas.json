@@ -1,0 +1,20 @@
+{
+  "scenarioId": "gas-confined-space-demo-01",
+  "scenarioVersion": "1.0.0",
+  "entryStepId": "gas_01_alarm",
+  "terminalStepIds": [
+    "gas_05_evacuate"
+  ],
+  "actionCategories": {
+    "gas_01_alarm/inspect_detector_alarm": "alarm_recognition",
+    "gas_01_alarm/ignore_detector_alarm": "alarm_recognition",
+    "gas_02_zone/recognize_restricted_zone": "hazard_zone",
+    "gas_02_zone/enter_restricted_zone": "hazard_zone",
+    "gas_03_ppe/select_configured_ppe_option": "ppe",
+    "gas_03_ppe/select_unapproved_demo_option": "ppe",
+    "gas_04_buddy/confirm_buddy_attendant_sequence": "buddy_system",
+    "gas_04_buddy/proceed_alone": "buddy_system",
+    "gas_05_evacuate/report_and_use_safe_route": "evacuation_reporting",
+    "gas_05_evacuate/use_restricted_route": "evacuation_reporting"
+  }
+}

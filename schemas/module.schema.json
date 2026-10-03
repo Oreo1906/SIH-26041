@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://surakshaxr.local/schemas/module.schema.json",
+  "title": "SurakshaXR Module",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "moduleId",
+    "version",
+    "titleKey",
+    "scenarioIds",
+    "questionBankId",
+    "passPolicy",
+    "refresherPolicy",
+    "supportedLocales",
+    "contentValidation"
+  ],
+  "properties": {
+    "moduleId": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "titleKey": {
+      "type": "string"
+    },
+    "descriptionKey": {
+      "type": "string"
+    },
+    "scenarioIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "questionBankId": {
+      "type": "string"
+    },
+    "supportedLocales": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 2
+    },
+    "passPolicy": {
+      "type": "object",
+      "required": [
+        "passThreshold",
+        "scenarioWeight",
+        "quizWeight"
+      ],
+      "properties": {
+        "passThreshold": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "scenarioWeight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "quizWeight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "criticalFailForcesFail": {
+          "type": "boolean"
+        }
+      }
+    },
+    "refresherPolicy": {
+      "type": "object",
+      "required": [
+        "enabled"
+      ],
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "defaultIntervalDays": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "prioritizeWeakTopics": {
+          "type": "boolean"
+        }
+      }
+    },
+    "contentValidation": {
+      "type": "object"
+    }
+  }
+}

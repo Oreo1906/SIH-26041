@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ascii-null-due",
+    "payload": {
+      "v": 1,
+      "certificateId": "b2d3e514-6aca-4dfe-b229-e8d8f32c22df",
+      "workerId": "fbd75326-555c-4c35-a766-4b0b135e3243",
+      "workerCode": "DEMO-001",
+      "workerDisplayName": "Demo Worker",
+      "moduleId": "fire-response",
+      "moduleVersion": "1.0.0",
+      "attemptId": "f344cb56-9380-4c49-9641-9aaebff2693b",
+      "score": 86,
+      "issuedAt": "2026-09-28T12:00:00Z",
+      "signerId": "demo-site-key-01"
+    },
+    "canonicalJson": "{\"v\":1,\"certificateId\":\"b2d3e514-6aca-4dfe-b229-e8d8f32c22df\",\"workerId\":\"fbd75326-555c-4c35-a766-4b0b135e3243\",\"workerCode\":\"DEMO-001\",\"workerDisplayName\":\"Demo Worker\",\"moduleId\":\"fire-response\",\"moduleVersion\":\"1.0.0\",\"attemptId\":\"f344cb56-9380-4c49-9641-9aaebff2693b\",\"score\":86,\"issuedAt\":\"2026-09-28T12:00:00Z\",\"refresherDueAt\":null,\"signerId\":\"demo-site-key-01\"}",
+    "sha256": "317b7cd9a93518a1a5d1efbf2c89ce1b3fabe4120282123105372830cbf29395"
+  },
+  {
+    "id": "unicode-escaped-name",
+    "payload": {
+      "v": 1,
+      "certificateId": "b2d3e514-6aca-4dfe-b229-e8d8f32c22df",
+      "workerId": "fbd75326-555c-4c35-a766-4b0b135e3243",
+      "workerCode": "DEMO-001",
+      "workerDisplayName": "श्रेया ᱥᱩᱨᱟᱠᱥᱟ \"Demo\"\n🛡",
+      "moduleId": "fire-response",
+      "moduleVersion": "1.0.0",
+      "attemptId": "f344cb56-9380-4c49-9641-9aaebff2693b",
+      "score": 86,
+      "issuedAt": "2026-09-28T12:00:00Z",
+      "refresherDueAt": "2026-12-28T12:00:00Z",
+      "signerId": "demo-site-key-01"
+    },
+    "canonicalJson": "{\"v\":1,\"certificateId\":\"b2d3e514-6aca-4dfe-b229-e8d8f32c22df\",\"workerId\":\"fbd75326-555c-4c35-a766-4b0b135e3243\",\"workerCode\":\"DEMO-001\",\"workerDisplayName\":\"श्रेया ᱥᱩᱨᱟᱠᱥᱟ \\\"Demo\\\"\\u000a🛡\",\"moduleId\":\"fire-response\",\"moduleVersion\":\"1.0.0\",\"attemptId\":\"f344cb56-9380-4c49-9641-9aaebff2693b\",\"score\":86,\"issuedAt\":\"2026-09-28T12:00:00Z\",\"refresherDueAt\":\"2026-12-28T12:00:00Z\",\"signerId\":\"demo-site-key-01\"}",
+    "sha256": "80728b8717ab9339707ab6c9e82a6a618e075d5e724444bb39dcd3429a0195a6"
+  }
+]

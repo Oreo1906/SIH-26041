@@ -1,0 +1,215 @@
+{
+  "questionBankId": "fire-questions-v1",
+  "moduleId": "fire-response",
+  "version": "1.0.0",
+  "questions": [
+    {
+      "id": "fire.question.recognition",
+      "promptKey": "fire.question.recognition.prompt",
+      "options": [
+        {
+          "id": "fire.question.recognition.recognize",
+          "textKey": "fire.question.recognition.option.recognize"
+        },
+        {
+          "id": "fire.question.recognition.ignore",
+          "textKey": "fire.question.recognition.option.ignore"
+        },
+        {
+          "id": "fire.question.recognition.continue_work",
+          "textKey": "fire.question.recognition.option.continue_work"
+        }
+      ],
+      "correctOptionIds": [
+        "fire.question.recognition.recognize"
+      ],
+      "explanationKey": "fire.question.recognition.explanation",
+      "topicTags": [
+        "fire.hazard_recognition"
+      ],
+      "difficulty": "application"
+    },
+    {
+      "id": "fire.question.alarm",
+      "promptKey": "fire.question.alarm.prompt",
+      "options": [
+        {
+          "id": "fire.question.alarm.walk_away",
+          "textKey": "fire.question.alarm.option.walk_away"
+        },
+        {
+          "id": "fire.question.alarm.raise",
+          "textKey": "fire.question.alarm.option.raise"
+        },
+        {
+          "id": "fire.question.alarm.skip",
+          "textKey": "fire.question.alarm.option.skip"
+        }
+      ],
+      "correctOptionIds": [
+        "fire.question.alarm.raise"
+      ],
+      "explanationKey": "fire.question.alarm.explanation",
+      "topicTags": [
+        "fire.alarm"
+      ],
+      "difficulty": "application"
+    },
+    {
+      "id": "fire.question.equipment_permission",
+      "promptKey": "fire.question.equipment_permission.prompt",
+      "options": [
+        {
+          "id": "fire.question.equipment_permission.always",
+          "textKey": "fire.question.equipment_permission.option.always"
+        },
+        {
+          "id": "fire.question.equipment_permission.configured",
+          "textKey": "fire.question.equipment_permission.option.configured"
+        },
+        {
+          "id": "fire.question.equipment_permission.unreviewed",
+          "textKey": "fire.question.equipment_permission.option.unreviewed"
+        }
+      ],
+      "correctOptionIds": [
+        "fire.question.equipment_permission.configured"
+      ],
+      "explanationKey": "fire.question.equipment_permission.explanation",
+      "topicTags": [
+        "fire.equipment"
+      ],
+      "difficulty": "application"
+    },
+    {
+      "id": "fire.question.route",
+      "promptKey": "fire.question.route.prompt",
+      "options": [
+        {
+          "id": "fire.question.route.blocked",
+          "textKey": "fire.question.route.option.blocked"
+        },
+        {
+          "id": "fire.question.route.hazard",
+          "textKey": "fire.question.route.option.hazard"
+        },
+        {
+          "id": "fire.question.route.safe",
+          "textKey": "fire.question.route.option.safe"
+        }
+      ],
+      "correctOptionIds": [
+        "fire.question.route.safe"
+      ],
+      "explanationKey": "fire.question.route.explanation",
+      "topicTags": [
+        "fire.evacuation"
+      ],
+      "difficulty": "application"
+    },
+    {
+      "id": "fire.question.reentry",
+      "promptKey": "fire.question.reentry.prompt",
+      "options": [
+        {
+          "id": "fire.question.reentry.bonus",
+          "textKey": "fire.question.reentry.option.bonus"
+        },
+        {
+          "id": "fire.question.reentry.critical",
+          "textKey": "fire.question.reentry.option.critical"
+        },
+        {
+          "id": "fire.question.reentry.required",
+          "textKey": "fire.question.reentry.option.required"
+        }
+      ],
+      "correctOptionIds": [
+        "fire.question.reentry.critical"
+      ],
+      "explanationKey": "fire.question.reentry.explanation",
+      "topicTags": [
+        "fire.evacuation"
+      ],
+      "difficulty": "application"
+    },
+    {
+      "id": "fire.question.sequence",
+      "promptKey": "fire.question.sequence.prompt",
+      "options": [
+        {
+          "id": "fire.question.sequence.certificate",
+          "textKey": "fire.question.sequence.option.certificate"
+        },
+        {
+          "id": "fire.question.sequence.muster_first",
+          "textKey": "fire.question.sequence.option.muster_first"
+        },
+        {
+          "id": "fire.question.sequence.alarm",
+          "textKey": "fire.question.sequence.option.alarm"
+        }
+      ],
+      "correctOptionIds": [
+        "fire.question.sequence.alarm"
+      ],
+      "explanationKey": "fire.question.sequence.explanation",
+      "topicTags": [
+        "fire.sequence"
+      ],
+      "difficulty": "application"
+    },
+    {
+      "id": "fire.question.muster",
+      "promptKey": "fire.question.muster.prompt",
+      "options": [
+        {
+          "id": "fire.question.muster.muster",
+          "textKey": "fire.question.muster.option.muster"
+        },
+        {
+          "id": "fire.question.muster.stop_midway",
+          "textKey": "fire.question.muster.option.stop_midway"
+        },
+        {
+          "id": "fire.question.muster.blocked",
+          "textKey": "fire.question.muster.option.blocked"
+        }
+      ],
+      "correctOptionIds": [
+        "fire.question.muster.muster"
+      ],
+      "explanationKey": "fire.question.muster.explanation",
+      "topicTags": [
+        "fire.evacuation"
+      ],
+      "difficulty": "application"
+    },
+    {
+      "id": "fire.question.approved_content",
+      "promptKey": "fire.question.approved_content.prompt",
+      "options": [
+        {
+          "id": "fire.question.approved_content.demo_alone",
+          "textKey": "fire.question.approved_content.option.demo_alone"
+        },
+        {
+          "id": "fire.question.approved_content.site_sop",
+          "textKey": "fire.question.approved_content.option.site_sop"
+        },
+        {
+          "id": "fire.question.approved_content.score_only",
+          "textKey": "fire.question.approved_content.option.score_only"
+        }
+      ],
+      "correctOptionIds": [
+        "fire.question.approved_content.site_sop"
+      ],
+      "explanationKey": "fire.question.approved_content.explanation",
+      "topicTags": [
+        "fire.equipment"
+      ],
+      "difficulty": "application"
+    }
+  ]
+}

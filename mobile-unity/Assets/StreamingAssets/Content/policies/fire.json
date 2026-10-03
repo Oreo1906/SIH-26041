@@ -1,0 +1,18 @@
+{
+  "scenarioId": "fire-response-demo-01",
+  "scenarioVersion": "1.0.0",
+  "entryStepId": "fire_01_recognize",
+  "terminalStepIds": [
+    "fire_04_evacuate"
+  ],
+  "actionCategories": {
+    "fire_01_recognize/identify_hazard": "hazard_recognition",
+    "fire_01_recognize/ignore_hazard": "hazard_recognition",
+    "fire_02_alarm/raise_alarm": "alarm_notification",
+    "fire_02_alarm/move_without_alarm": "alarm_notification",
+    "fire_03_decision/use_demo_extinguisher_when_permitted": "decision_equipment",
+    "fire_03_decision/take_blocked_route": "decision_equipment",
+    "fire_04_evacuate/reach_safe_exit_and_muster": "evacuation_sequence",
+    "fire_04_evacuate/reenter_hazard": "evacuation_sequence"
+  }
+}

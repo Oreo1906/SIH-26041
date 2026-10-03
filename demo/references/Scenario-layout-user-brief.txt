@@ -1,0 +1,933 @@
+Continue working inside the EXISTING SIH26041 application and repository.
+
+Do NOT create a new project or rebuild systems that are already working.
+
+I am providing a reference image showing the intended top-view arrangement for our TWO AR training modules:
+
+1. Fire & Explosion Safety
+2. Gas Leak + Confined Space Safety — THIS IS ONE COMBINED MODULE, not two separate modules.
+
+Use the supplied image as the visual/spatial reference for how the training areas should be arranged.
+
+The main correction required in the current AR implementation is:
+
+DO NOT place equipment randomly around the worker.
+
+In a real safety-training environment, equipment, hazards, restricted zones, checkpoints and evacuation destinations have meaningful spatial relationships.
+
+Our AR system therefore needs to:
+
+SCAN THE AVAILABLE OPEN GROUND
+→ understand enough usable ground
+→ choose a suitable orientation and scale for the scenario
+→ fit a PREDEFINED SAFETY LAYOUT onto that real ground
+→ anchor the complete layout
+→ start training.
+
+The worker should NOT manually position anything.
+
+--------------------------------------------------
+CORE DESIGN PRINCIPLE
+--------------------------------------------------
+
+Implement the AR scenario as a RELATIVE LAYOUT / SPATIAL TEMPLATE.
+
+For example, the Fire scenario should conceptually contain:
+
+ScenarioRoot
+│
+├── WorkerStart
+├── FireHazard
+│   └── HazardZone
+├── FireExtinguisher
+├── AlarmPoint if currently supported
+├── EvacuationPath
+└── SafeZone
+
+Each element should have a meaningful position RELATIVE TO ScenarioRoot.
+
+Do the same for Gas Leak + Confined Space:
+
+ScenarioRoot
+│
+├── WorkerStart
+├── ConfinedSpaceEntry
+├── GasLeakSource
+├── GasHazardZone
+├── RestrictedEntryZone
+├── PPECheckpoint
+├── GasDetector / MonitoringPoint
+├── Barrier / Warning Indicators
+├── EvacuationPath
+└── SafeZone
+
+Do NOT independently choose random world coordinates for every item.
+
+Instead:
+
+1. create one coherent layout in local coordinates
+2. inspect the available real ground
+3. select a suitable ScenarioRoot pose
+4. rotate/translate the layout to fit the environment
+5. optionally scale within a small configurable safe range
+6. validate the important points
+7. anchor the scenario
+8. instantiate the entire arrangement relative to that root
+
+This preserves proper equipment placement.
+
+--------------------------------------------------
+VERY IMPORTANT: DISTANCES IN THE REFERENCE IMAGE
+--------------------------------------------------
+
+Treat distances visible in the supplied image as DEMONSTRATION / VISUALIZATION REFERENCES ONLY.
+
+Do NOT encode them as legal mining regulations.
+
+Do NOT claim those numbers are DGMS-mandated safety distances unless validated source data already exists in our project.
+
+Make all layout distances configurable.
+
+Example:
+
+FireScenarioLayoutConfig
+{
+    workerToHazard
+    extinguisherOffset
+    hazardRadius
+    safeZoneDistance
+    routeSpacing
+}
+
+GasConfinedScenarioLayoutConfig
+{
+    workerToCheckpoint
+    checkpointToEntry
+    gasSourceOffset
+    restrictedZoneRadius
+    monitorPointOffset
+    ppePointOffset
+    safeZoneDistance
+}
+
+Keep these values in configuration/data rather than scattering literal numbers throughout AR scripts.
+
+--------------------------------------------------
+OPEN-GROUND ASSUMPTION
+--------------------------------------------------
+
+Optimize this implementation for the open ground we will use for the SIH demonstration video.
+
+Expected environment:
+
+- outdoor open ground
+- approximately flat terrain
+- soil/concrete/gravel
+- daylight
+- enough visible textured ground
+- approximately 5–10 metres usable area
+- ARCore-supported Android phone
+
+Do not attempt full industrial-site reconstruction.
+
+We only need enough environmental understanding to FIT the designed scenario into the available space.
+
+--------------------------------------------------
+SCENARIO FITTING SYSTEM
+--------------------------------------------------
+
+Create or modify the existing auto-placement system so that it places a WHOLE SCENARIO rather than individual objects randomly.
+
+Conceptual process:
+
+AR camera starts
+→ scan environment
+→ gather usable ground points/planes
+→ determine worker/start location
+→ determine available forward/left/right space
+→ test possible ScenarioRoot orientations
+→ validate all important layout points
+→ choose best-fitting orientation
+→ create anchor(s)
+→ instantiate layout
+→ start scenario.
+
+Possible orientations to test:
+
+0°
+45°
+90°
+135°
+180°
+225°
+270°
+315°
+
+The exact algorithm can be simplified if the current codebase has an easier solution.
+
+The key requirement is:
+
+TRY TO FIT THE DESIGNED LAYOUT INTO VALID GROUND.
+
+For each orientation:
+
+take all critical local points:
+
+hazard
+equipment
+checkpoint
+entry
+safe zone
+etc.
+
+Transform them into proposed world-space positions.
+
+Raycast each location against detected ground.
+
+Calculate a layout-fit score.
+
+Example scoring considerations:
+
++ valid ground beneath required points
++ stable tracking
++ sufficient distance from camera
++ safe zone clearly separated from hazard
++ equipment accessible from worker side
++ objects not occupying exactly the same position
++ route fits inside scanned region
+
+Reject the orientation if important points have no valid support.
+
+Choose the best valid orientation.
+
+--------------------------------------------------
+DO NOT AUTO-REARRANGE RELATIONSHIPS
+--------------------------------------------------
+
+For example, in Fire scenario:
+
+Do NOT allow:
+
+fire
+extinguisher
+safe zone
+
+to end up arbitrarily scattered.
+
+The relative structure should remain meaningful.
+
+Conceptually:
+
+                    SAFE ZONE
+                        ✅
+                        ↑
+                        ↑
+                    evacuation
+
+
+           FIRE / HAZARD
+                 🔥
+            danger zone
+
+
+      EXTINGUISHER 🧯
+
+
+                USER
+                 👷
+
+The exact angle can rotate to fit the real environment.
+
+For example the entire layout can rotate:
+
+Layout A:
+
+hazard ahead
+extinguisher left
+safe zone forward-right
+
+Layout B:
+
+hazard right
+extinguisher behind-left
+safe zone left
+
+BUT:
+
+their relationships should follow the scenario template.
+
+--------------------------------------------------
+FIRE & EXPLOSION AR LAYOUT
+--------------------------------------------------
+
+Use the supplied reference image as the primary visual guide.
+
+Required conceptual components:
+
+A. Worker Start Position
+
+Worker begins outside the hazard area.
+
+B. Fire / Explosion Hazard
+
+Virtual fire source.
+
+Place hazard ring around it.
+
+Potential visual elements:
+- fire
+- smoke
+- warning marker
+- danger ring
+
+C. Fire Extinguisher
+
+Extinguisher must be outside the hazard zone.
+
+It must not spawn inside/behind the fire.
+
+It should be positioned so the worker can visually identify it as an available safety-training object.
+
+D. Safe / Assembly Zone
+
+Must be spatially separated from the hazard.
+
+Do not place safe zone on top of fire or extinguisher.
+
+E. Evacuation Direction
+
+Generate visible AR guidance from the training area toward the safe zone.
+
+Use ground arrows.
+
+F. Optional alarm point
+
+If an alarm-point component already exists in the project, retain it and place it outside the immediate hazard region.
+
+Do not add it merely because the reference image contains it if it would consume unnecessary development time.
+
+--------------------------------------------------
+FIRE SCENARIO GEOMETRY
+--------------------------------------------------
+
+Think in local scenario coordinates.
+
+Example conceptual arrangement:
+
+ScenarioRoot = worker start
+
+local forward = direction into training scene
+
+Fire:
+forward several metres
+
+Extinguisher:
+forward-left relative to worker
+outside hazard boundary
+
+SafeZone:
+forward-right or side-away from fire depending on fitting
+
+This is only conceptual.
+
+Use current project layout values/configuration.
+
+The entire template should be able to rotate on open ground.
+
+--------------------------------------------------
+GAS LEAK + CONFINED SPACE IS ONE MODULE
+--------------------------------------------------
+
+Do not create:
+
+GasLeakModule
+AND
+ConfinedSpaceModule
+
+as independent training modules unless the existing architecture already uses internal sub-scenarios.
+
+Externally this should remain ONE module:
+
+Gas Leak & Confined Space Safety.
+
+The scenario represents a gas hazard associated with or near a confined-space entry.
+
+--------------------------------------------------
+GAS + CONFINED SPACE LAYOUT
+--------------------------------------------------
+
+Use the supplied reference image.
+
+Required conceptual components:
+
+A. Worker Start
+
+Worker begins outside the restricted area.
+
+B. Confined Space Entry
+
+Use existing manhole/tank/opening prefab if available.
+
+If no suitable prefab exists, create a lightweight visual opening/entry marker rather than spending large effort on modelling.
+
+C. Gas Leak Source
+
+Place gas source associated with the confined-space / industrial equipment region.
+
+Examples visually:
+
+pipe
+valve
+flange
+tank connection
+
+The exact source is a training visualization.
+
+D. Gas Hazard Zone
+
+Render a visible restricted/hazard area around the leak.
+
+For example:
+
+yellow/orange translucent zone
+warning ring
+gas cloud visualization
+
+Do not simulate real gas dispersion physics in this task.
+
+E. Restricted Entry Zone
+
+The confined-space opening should visibly communicate:
+
+restricted entry
+do not enter before required checks
+
+Use barrier/cones/warning marker if existing assets support this.
+
+F. Gas Detection / Monitoring Point
+
+Place detector/monitoring equipment OUTSIDE the primary restricted zone.
+
+It should visually represent that testing occurs before unsafe entry.
+
+Do not hard-code regulatory thresholds.
+
+G. PPE / Check Point
+
+Place PPE/checkpoint on the safe side of the approach.
+
+It should be reachable BEFORE the worker enters the restricted area.
+
+H. Safe Zone
+
+Position it clearly away from the gas hazard.
+
+I. Evacuation Path
+
+Route visually away from the hazard and toward the safe zone.
+
+--------------------------------------------------
+SIMULATED WIND DIRECTION
+--------------------------------------------------
+
+For Gas Leak training, evacuation direction may depend conceptually on wind direction.
+
+However:
+
+DO NOT claim the phone knows actual wind direction unless we genuinely have a sensor/data source for that.
+
+For this SIH offline demo:
+
+use a SIMULATED training wind direction generated by the scenario.
+
+For example:
+
+Scenario UI:
+
+SIMULATED WIND
+→
+
+or
+
+Training Wind Direction
+←
+
+The spatial layout can use this simulated direction.
+
+For example:
+
+gas source
+→ gas hazard visualization follows simulated wind orientation
+
+safe zone should be placed conceptually away from the hazard and consistent with our configured training scenario.
+
+Clearly keep this as TRAINING SIMULATION DATA.
+
+Do not call it live meteorological data.
+
+--------------------------------------------------
+OPEN-GROUND SCENARIO ROOT
+--------------------------------------------------
+
+I want one clean architectural concept:
+
+AR Environment
+    ↓
+Find usable region
+    ↓
+ScenarioRootAnchor
+    ↓
+Scenario Layout
+
+Objects should preferably be parented relative to that scenario root when technically appropriate.
+
+Do not make every object independently recalculate itself from the camera.
+
+Once placement is accepted:
+
+LOCK the scenario.
+
+Do not allow objects to chase the user/camera.
+
+--------------------------------------------------
+GROUND CONFORMANCE
+--------------------------------------------------
+
+Because open ground may not be perfectly flat:
+
+after selecting ScenarioRoot and orientation:
+
+raycast important item positions toward real ground.
+
+Adjust only the Y / surface height where appropriate.
+
+Do not significantly alter X/Z relationships unless the fitting algorithm rejects the candidate layout entirely.
+
+Example:
+
+planned extinguisher X/Z remains meaningful
+
+but Y adjusts slightly to sit on the detected terrain.
+
+The same applies to:
+
+fire base
+confined-space marker
+PPE
+warning cones
+safe-zone ground marker
+
+Floating labels do not require exact surface conformity.
+
+--------------------------------------------------
+HAZARD ZONES
+--------------------------------------------------
+
+Hazard zones are virtual TRAINING visualization.
+
+Use clean readable shapes.
+
+Fire:
+
+red/orange circular danger zone around fire.
+
+Gas:
+
+yellow/orange gas/restricted zone around leak/entry.
+
+Do not use excessive huge areas that extend beyond scanned ground.
+
+Scale appropriately to the available scenario size.
+
+--------------------------------------------------
+SAFE ZONE
+--------------------------------------------------
+
+Safe zone must be obvious in our demo video.
+
+Use:
+
+green ground marker
+green beacon
+SAFE ZONE text
+check icon if already supported
+
+Keep it spatially separated from hazard.
+
+If candidate layout cannot place a valid safe zone:
+
+reject that orientation and try another.
+
+--------------------------------------------------
+EVACUATION ROUTE
+--------------------------------------------------
+
+Generate arrows based on the chosen scenario template.
+
+Do not use straight arrows through the hazard.
+
+For Fire:
+
+route should visually lead away from immediate fire/hazard toward safe zone.
+
+For Gas:
+
+route should visually lead away from gas/restricted region toward safe zone.
+
+The path does NOT need advanced real-world obstacle navigation for this open-ground demo.
+
+But it must respect the VIRTUAL hazard layout.
+
+For example:
+
+BAD:
+
+USER → FIRE → SAFE
+
+GOOD:
+
+USER
+  ↘
+    → → around hazard → SAFE
+
+Implement this using simple predefined local waypoints transformed with ScenarioRoot.
+
+This is MUCH better than recalculating a completely random line.
+
+--------------------------------------------------
+PREDEFINED PATH WAYPOINTS
+--------------------------------------------------
+
+Each scenario template can contain local-space evacuation waypoints.
+
+Example:
+
+FireLayout:
+worker
+→ routePoint1
+→ routePoint2
+→ safeZone
+
+GasLayout:
+worker
+→ checkpoint side
+→ routePoint1 away from restricted zone
+→ safeZone
+
+When ScenarioRoot rotates, these waypoints rotate with it.
+
+Instantiate arrow prefabs along these path segments.
+
+--------------------------------------------------
+REAL ENVIRONMENT OBJECTS
+--------------------------------------------------
+
+Do NOT attempt to identify every rock, tree, chair or object.
+
+For this outdoor SIH iteration:
+
+use AR surface/tracking information only to check whether the template can reasonably fit.
+
+If a candidate layout fails because ground raycasts are unavailable at important points:
+
+try another orientation/location.
+
+Do not add YOLO/object detection or semantic segmentation in this task.
+
+--------------------------------------------------
+PLACEMENT FALLBACK
+--------------------------------------------------
+
+Try:
+
+Candidate ScenarioRoot #1
+→ validate layout
+
+If invalid:
+
+Candidate ScenarioRoot #2
+
+If invalid:
+
+rotate layout
+
+If invalid:
+
+try slightly smaller configured scenario scale if allowed
+
+If still invalid:
+
+tell user:
+
+"Move to a clearer area and scan again."
+
+If AR still cannot configure reliably:
+
+use our existing 3D simulation fallback.
+
+Do not generate a broken-looking AR scene.
+
+--------------------------------------------------
+SCENARIO SCALE
+--------------------------------------------------
+
+The designed relationship matters more than exact dimensions.
+
+Allow controlled scenario scaling if necessary.
+
+Example configuration:
+
+minScenarioScale
+defaultScenarioScale
+maxScenarioScale
+
+Do not allow extreme scaling where:
+
+fire is almost touching extinguisher
+
+or
+
+the safe zone becomes meaningless.
+
+Use a narrow sensible range.
+
+--------------------------------------------------
+DEMO-FIRST BEHAVIOUR
+--------------------------------------------------
+
+We will record this on known open ground.
+
+Prioritize deterministic stability.
+
+If necessary, support a demo profile such as:
+
+OpenGroundDemoProfile
+
+with optimized values for:
+
+scan duration
+scenario radius
+candidate directions
+object scale
+arrow spacing
+particle quality
+
+Do not hard-code device-specific hacks unless absolutely necessary.
+
+--------------------------------------------------
+NORMAL USER FLOW
+--------------------------------------------------
+
+For BOTH modules:
+
+Select module
+↓
+Start AR
+↓
+"Scan training area"
+↓
+Move camera across ground
+↓
+system validates usable space
+↓
+"Environment Ready"
+↓
+Scenario template is automatically fitted
+↓
+3
+2
+1
+↓
+training starts.
+
+User never sees:
+
+"Place fire here"
+
+or:
+
+"Place extinguisher here."
+
+--------------------------------------------------
+DEVELOPER MODE
+--------------------------------------------------
+
+Keep developer/debug visualization if currently available.
+
+We need to see:
+
+- detected planes
+- tracking state
+- candidate ScenarioRoot poses
+- rejected layout candidates
+- selected layout orientation
+- scenario scale
+- anchor state
+- important raycast hits
+
+Optional useful debug rendering:
+
+GREEN = valid candidate layout
+RED = rejected candidate layout
+BLUE = selected ScenarioRoot
+
+This must not appear in normal training mode.
+
+--------------------------------------------------
+REFERENCE IMAGE USAGE
+--------------------------------------------------
+
+Use the attached reference image primarily for:
+
+- relative spatial relationships
+- visual hierarchy
+- hazard/equipment separation
+- safe-zone positioning concept
+- route design
+- overall scene composition
+
+Do NOT try to reproduce every decorative detail.
+
+Do NOT treat illustrated measurements as legally validated engineering specifications.
+
+Our purpose is to build a believable, coherent AR training layout.
+
+--------------------------------------------------
+USE EXISTING CODE FIRST
+--------------------------------------------------
+
+Before implementing:
+
+inspect existing repository for:
+
+- AR placement managers
+- scenario managers
+- anchor logic
+- fire prefab
+- extinguisher prefab
+- gas effects
+- confined-space models
+- safe-zone components
+- path/arrow rendering
+- training state machine
+- assessment engine
+
+Reuse and modify existing systems.
+
+Do NOT produce duplicates such as:
+
+PlacementManagerV2
+NewPlacementManager
+FinalPlacementManager
+
+unless there is a genuine architectural reason.
+
+Refactor the current implementation cleanly.
+
+--------------------------------------------------
+PRIORITY ORDER
+--------------------------------------------------
+
+Implement in this order:
+
+1. inspect current AR implementation
+2. create/fix spatial scenario-template representation
+3. implement Fire layout fitting
+4. validate outdoor placement
+5. anchor full Fire scene
+6. implement Fire evacuation path
+7. implement Gas + Confined Space combined layout
+8. implement its route/checkpoint placement
+9. integrate both with existing training state machine
+10. test tracking stability
+11. verify existing 3D fallback remains functional
+12. create Android build
+
+Do not expand scope until these work.
+
+--------------------------------------------------
+ACCEPTANCE TEST — FIRE
+--------------------------------------------------
+
+On our open ground:
+
+1. launch existing Fire & Explosion AR module
+2. scan ground
+3. no manual placement
+4. system determines usable area
+5. coherent Fire layout appears automatically
+6. extinguisher is outside the fire hazard zone
+7. safe zone is clearly separated
+8. evacuation arrows avoid the virtual hazard area
+9. objects stay anchored while camera moves
+10. existing training interaction proceeds normally
+
+PASS only if all major elements form one coherent designed scene.
+
+--------------------------------------------------
+ACCEPTANCE TEST — GAS + CONFINED SPACE
+--------------------------------------------------
+
+1. launch Gas Leak + Confined Space AR module
+2. scan ground
+3. no manual placement
+4. system fits the scenario automatically
+5. confined-space opening appears
+6. gas source/hazard area is positioned meaningfully around the industrial/entry area
+7. detector point is outside primary restricted zone
+8. PPE/check point is before entry
+9. worker begins outside restricted area
+10. safe zone is separated
+11. evacuation guidance leads away from hazard
+12. all items remain stable while camera moves
+
+--------------------------------------------------
+DO NOT SPEND TIME ON
+--------------------------------------------------
+
+Do not implement:
+
+- automatic real fire recognition
+- real gas detection
+- real wind sensing
+- GPS
+- Cloud Anchors
+- Geospatial API
+- full terrain mesh reconstruction
+- automatic door detection
+- complex NavMesh reconstruction
+- ML obstacle recognition
+- photorealistic explosion physics
+- CFD gas simulation
+- unrelated dashboard work
+
+These are outside the current task.
+
+--------------------------------------------------
+FINAL OUTPUT FROM YOU
+--------------------------------------------------
+
+After implementing the fixes, report:
+
+1. existing files inspected
+2. files modified
+3. how scenario layouts are represented
+4. Fire layout logic
+5. Gas + Confined Space layout logic
+6. layout-fitting algorithm
+7. how candidate orientations are evaluated
+8. how ground-height adjustment works
+9. how paths are generated
+10. any Inspector configuration required
+11. Android build status
+12. exact outdoor testing procedure
+13. known limitations
+14. remaining bugs
+
+Most importantly:
+
+DO NOT just explain this implementation.
+
+Modify the EXISTING project and make it operational.
+
+The target result is that when we record our SIH demo on open ground, the AR system automatically creates a professionally arranged safety-training area based on the supplied top-view reference image rather than randomly scattering virtual objects.

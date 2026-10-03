@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://surakshaxr.local/schemas/sync-push.schema.json",
+  "title": "SurakshaXR Sync Push",
+  "type": "object",
+  "required": [
+    "deviceId",
+    "clientTime",
+    "events"
+  ],
+  "properties": {
+    "deviceId": {
+      "type": "string"
+    },
+    "clientTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "events": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "required": [
+          "eventId",
+          "entityType",
+          "entityId",
+          "operation",
+          "occurredAt",
+          "payload"
+        ],
+        "properties": {
+          "eventId": {
+            "type": "string"
+          },
+          "entityType": {
+            "type": "string"
+          },
+          "entityId": {
+            "type": "string"
+          },
+          "operation": {
+            "type": "string",
+            "enum": [
+              "append",
+              "upsert"
+            ]
+          },
+          "occurredAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "payload": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

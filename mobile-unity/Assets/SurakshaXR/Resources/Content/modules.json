@@ -1,0 +1,44 @@
+[
+  {
+    "moduleId": "fire-response",
+    "version": "1.0.0",
+    "titleKey": "fire.module.title",
+    "descriptionKey": "fire.module.description",
+    "scenarioIds": ["fire-response-demo-01"],
+    "questionBankId": "fire-questions-v1",
+    "supportedLocales": ["hi", "sat", "en"],
+    "passPolicy": {
+      "passThreshold": 70,
+      "scenarioWeight": 0.8,
+      "quizWeight": 0.2,
+      "criticalFailForcesFail": true
+    },
+    "refresherPolicy": {
+      "enabled": true,
+      "defaultIntervalDays": 90,
+      "prioritizeWeakTopics": true
+    },
+    "contentValidation": {"status": "demo-unvalidated", "version": "demo-1"}
+  },
+  {
+    "moduleId": "gas-confined-space",
+    "version": "1.0.0",
+    "titleKey": "gas.module.title",
+    "descriptionKey": "gas.module.description",
+    "scenarioIds": ["gas-confined-space-demo-01"],
+    "questionBankId": "gas-questions-v1",
+    "supportedLocales": ["hi", "sat", "en"],
+    "passPolicy": {
+      "passThreshold": 70,
+      "scenarioWeight": 0.8,
+      "quizWeight": 0.2,
+      "criticalFailForcesFail": true
+    },
+    "refresherPolicy": {
+      "enabled": true,
+      "defaultIntervalDays": 90,
+      "prioritizeWeakTopics": true
+    },
+    "contentValidation": {"status": "demo-unvalidated", "version": "demo-1"}
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://surakshaxr.local/schemas/session-options.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["requirePractice", "assessmentQuestionCount"],
+  "properties": {
+    "requirePractice": {"type": "boolean"},
+    "assessmentQuestionCount": {"type": "integer", "const": 5}
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "testOnly": true,
+  "testPrivateSeedB64": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8=",
+  "testRootSeedB64": "Hx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQA=",
+  "publicKeyB64": "A6EHv/POEL4dcN0Y50vAmWfk1jCbpQ1fHdyGZBJVMbg=",
+  "rootPublicKeyB64": "cSZR9FC6BbY4mLme9fe6RWMujiUn9/cVzWcexAJMxR4=",
+  "trustBundle": {
+    "v": 1,
+    "bundleVersion": 1,
+    "issuedAt": "2026-09-28T00:00:00Z",
+    "signers": [
+      {
+        "signerId": "demo-site-key-01",
+        "displayName": "PUBLIC TEST ONLY / परीक्षण",
+        "publicKeyB64": "A6EHv/POEL4dcN0Y50vAmWfk1jCbpQ1fHdyGZBJVMbg=",
+        "validFrom": "2026-01-01T00:00:00Z",
+        "validTo": null,
+        "revoked": false
+      }
+    ],
+    "rootSignature": "xRtFrlJ_mZu961mMrLDrZ2BORVOv5j7PemiU3p7V649vSA0u3Eyl6Q62kyuv52aahIVA7O8zX0Ityv1UYtluCw"
+  },
+  "trustCanonical": "{\"v\":1,\"bundleVersion\":1,\"issuedAt\":\"2026-09-28T00:00:00Z\",\"signers\":[{\"signerId\":\"demo-site-key-01\",\"displayName\":\"PUBLIC TEST ONLY / परीक्षण\",\"publicKeyB64\":\"A6EHv/POEL4dcN0Y50vAmWfk1jCbpQ1fHdyGZBJVMbg=\",\"validFrom\":\"2026-01-01T00:00:00Z\",\"validTo\":null,\"revoked\":false}]}",
+  "vectors": [
+    {
+      "id": "ascii-null-due",
+      "payload": {
+        "v": 1,
+        "certificateId": "b2d3e514-6aca-4dfe-b229-e8d8f32c22df",
+        "workerId": "fbd75326-555c-4c35-a766-4b0b135e3243",
+        "workerCode": "DEMO-001",
+        "workerDisplayName": "Demo Worker",
+        "moduleId": "fire-response",
+        "moduleVersion": "1.0.0",
+        "attemptId": "f344cb56-9380-4c49-9641-9aaebff2693b",
+        "score": 86,
+        "issuedAt": "2026-09-28T12:00:00Z",
+        "signerId": "demo-site-key-01"
+      },
+      "signatureB64": "dazonNPuSvUymsTU2f+6p1P4OsyV8CPdvYCl7rW3+wKiDtbQ0d7WoxfKJy+0YD9t9tDCx5AeC9blz14hURqqCw==",
+      "envelope": "{\"alg\":\"Ed25519\",\"payload\":\"eyJ2IjoxLCJjZXJ0aWZpY2F0ZUlkIjoiYjJkM2U1MTQtNmFjYS00ZGZlLWIyMjktZThkOGYzMmMyMmRmIiwid29ya2VySWQiOiJmYmQ3NTMyNi01NTVjLTRjMzUtYTc2Ni00YjBiMTM1ZTMyNDMiLCJ3b3JrZXJDb2RlIjoiREVNTy0wMDEiLCJ3b3JrZXJEaXNwbGF5TmFtZSI6IkRlbW8gV29ya2VyIiwibW9kdWxlSWQiOiJmaXJlLXJlc3BvbnNlIiwibW9kdWxlVmVyc2lvbiI6IjEuMC4wIiwiYXR0ZW1wdElkIjoiZjM0NGNiNTYtOTM4MC00YzQ5LTk2NDEtOWFhZWJmZjI2OTNiIiwic2NvcmUiOjg2LCJpc3N1ZWRBdCI6IjIwMjYtMDktMjhUMTI6MDA6MDBaIiwicmVmcmVzaGVyRHVlQXQiOm51bGwsInNpZ25lcklkIjoiZGVtby1zaXRlLWtleS0wMSJ9\",\"sig\":\"dazonNPuSvUymsTU2f-6p1P4OsyV8CPdvYCl7rW3-wKiDtbQ0d7WoxfKJy-0YD9t9tDCx5AeC9blz14hURqqCw\"}"
+    },
+    {
+      "id": "unicode-escaped-name",
+      "payload": {
+        "v": 1,
+        "certificateId": "b2d3e514-6aca-4dfe-b229-e8d8f32c22df",
+        "workerId": "fbd75326-555c-4c35-a766-4b0b135e3243",
+        "workerCode": "DEMO-001",
+        "workerDisplayName": "श्रेया ᱥᱩᱨᱟᱠᱥᱟ \"Demo\"\n🛡",
+        "moduleId": "fire-response",
+        "moduleVersion": "1.0.0",
+        "attemptId": "f344cb56-9380-4c49-9641-9aaebff2693b",
+        "score": 86,
+        "issuedAt": "2026-09-28T12:00:00Z",
+        "refresherDueAt": "2026-12-28T12:00:00Z",
+        "signerId": "demo-site-key-01"
+      },
+      "signatureB64": "vSrJKUF/1eO1JHNyrmSbTtqpwmWUxSlg9BA1LVjJnuYlPcEZZUVzuDYCdcJMmcOsYdM3uxIxMaYnCV6RZZzPCg==",
+      "envelope": "{\"alg\":\"Ed25519\",\"payload\":\"eyJ2IjoxLCJjZXJ0aWZpY2F0ZUlkIjoiYjJkM2U1MTQtNmFjYS00ZGZlLWIyMjktZThkOGYzMmMyMmRmIiwid29ya2VySWQiOiJmYmQ3NTMyNi01NTVjLTRjMzUtYTc2Ni00YjBiMTM1ZTMyNDMiLCJ3b3JrZXJDb2RlIjoiREVNTy0wMDEiLCJ3b3JrZXJEaXNwbGF5TmFtZSI6IuCktuCljeCksOClh-Ckr-CkviDhsaXhsanhsajhsZ_hsaDhsaXhsZ8gXCJEZW1vXCJcdTAwMGHwn5uhIiwibW9kdWxlSWQiOiJmaXJlLXJlc3BvbnNlIiwibW9kdWxlVmVyc2lvbiI6IjEuMC4wIiwiYXR0ZW1wdElkIjoiZjM0NGNiNTYtOTM4MC00YzQ5LTk2NDEtOWFhZWJmZjI2OTNiIiwic2NvcmUiOjg2LCJpc3N1ZWRBdCI6IjIwMjYtMDktMjhUMTI6MDA6MDBaIiwicmVmcmVzaGVyRHVlQXQiOiIyMDI2LTEyLTI4VDEyOjAwOjAwWiIsInNpZ25lcklkIjoiZGVtby1zaXRlLWtleS0wMSJ9\",\"sig\":\"vSrJKUF_1eO1JHNyrmSbTtqpwmWUxSlg9BA1LVjJnuYlPcEZZUVzuDYCdcJMmcOsYdM3uxIxMaYnCV6RZZzPCg\"}"
+    }
+  ]
+}

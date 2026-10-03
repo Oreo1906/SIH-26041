@@ -1,0 +1,334 @@
+{
+  "scenarioId": "gas-confined-space-demo-01",
+  "moduleId": "gas-confined-space",
+  "version": "1.0.0",
+  "titleKey": "gas.scenario.demo01.title",
+  "descriptionKey": "gas.scenario.demo01.description",
+  "objectives": [
+    "gas.objective.alarm",
+    "gas.objective.hazard_zone",
+    "gas.objective.ppe",
+    "gas.objective.buddy",
+    "gas.objective.evacuate"
+  ],
+  "anchors": [
+    {
+      "id": "origin",
+      "simPosition": [
+        0,
+        0,
+        0
+      ],
+      "simRotationEuler": [
+        0,
+        0,
+        0
+      ],
+      "arPlacementHint": "floor"
+    },
+    {
+      "id": "detector",
+      "simPosition": [
+        1,
+        1.2,
+        1
+      ],
+      "simRotationEuler": [
+        0,
+        180,
+        0
+      ],
+      "arPlacementHint": "relative"
+    },
+    {
+      "id": "restricted_zone",
+      "simPosition": [
+        0,
+        0,
+        5
+      ],
+      "simRotationEuler": [
+        0,
+        0,
+        0
+      ],
+      "arPlacementHint": "relative"
+    },
+    {
+      "id": "ppe_rack",
+      "simPosition": [
+        -2,
+        0,
+        1
+      ],
+      "simRotationEuler": [
+        0,
+        0,
+        0
+      ],
+      "arPlacementHint": "relative"
+    },
+    {
+      "id": "buddy_station",
+      "simPosition": [
+        2,
+        0,
+        2
+      ],
+      "simRotationEuler": [
+        0,
+        0,
+        0
+      ],
+      "arPlacementHint": "relative"
+    },
+    {
+      "id": "safe_route",
+      "simPosition": [
+        -5,
+        0,
+        0
+      ],
+      "simRotationEuler": [
+        0,
+        90,
+        0
+      ],
+      "arPlacementHint": "relative"
+    }
+  ],
+  "entities": [
+    {
+      "id": "detector_ui",
+      "kind": "detector",
+      "anchorId": "detector",
+      "prefabKey": "prop.gas_detector",
+      "labelKey": "gas.entity.detector",
+      "initiallyVisible": true
+    },
+    {
+      "id": "restricted_boundary",
+      "kind": "hazard_zone",
+      "anchorId": "restricted_zone",
+      "prefabKey": "zone.restricted",
+      "labelKey": "gas.entity.restricted_zone",
+      "initiallyVisible": true
+    },
+    {
+      "id": "ppe_choices",
+      "kind": "ppe",
+      "anchorId": "ppe_rack",
+      "prefabKey": "prop.ppe_rack",
+      "labelKey": "gas.entity.ppe",
+      "initiallyVisible": true
+    },
+    {
+      "id": "buddy_token",
+      "kind": "buddy",
+      "anchorId": "buddy_station",
+      "prefabKey": "npc.buddy_token",
+      "labelKey": "gas.entity.buddy",
+      "initiallyVisible": true
+    },
+    {
+      "id": "safe_route_marker",
+      "kind": "exit",
+      "anchorId": "safe_route",
+      "prefabKey": "marker.route.safe",
+      "labelKey": "common.safe_route",
+      "initiallyVisible": true
+    }
+  ],
+  "steps": [
+    {
+      "stepId": "gas_01_alarm",
+      "objectiveKey": "gas.step.alarm.objective",
+      "narrationKey": "gas.step.alarm.narration",
+      "timeLimitSec": null,
+      "allowedActions": [
+        {
+          "actionId": "inspect_detector_alarm",
+          "result": "correct",
+          "scoreDelta": 15,
+          "feedbackKey": "gas.feedback.alarm_correct",
+          "weakTopicTags": [],
+          "nextStepId": "gas_02_zone",
+          "criticalFail": false
+        },
+        {
+          "actionId": "ignore_detector_alarm",
+          "result": "incorrect",
+          "scoreDelta": -15,
+          "feedbackKey": "gas.feedback.alarm_ignored",
+          "weakTopicTags": [
+            "gas.alarm"
+          ],
+          "nextStepId": null,
+          "criticalFail": false
+        }
+      ],
+      "visualCommands": [
+        {
+          "type": "setDetectorState",
+          "entityId": "detector_ui",
+          "state": "DEMO_ALARM_NO_THRESHOLD"
+        }
+      ]
+    },
+    {
+      "stepId": "gas_02_zone",
+      "objectiveKey": "gas.step.zone.objective",
+      "narrationKey": "gas.step.zone.narration",
+      "timeLimitSec": null,
+      "allowedActions": [
+        {
+          "actionId": "recognize_restricted_zone",
+          "result": "correct",
+          "scoreDelta": 20,
+          "feedbackKey": "gas.feedback.zone_correct",
+          "weakTopicTags": [],
+          "nextStepId": "gas_03_ppe",
+          "criticalFail": false
+        },
+        {
+          "actionId": "enter_restricted_zone",
+          "result": "incorrect",
+          "scoreDelta": -25,
+          "feedbackKey": "gas.feedback.unauthorized_entry",
+          "weakTopicTags": [
+            "gas.hazard_zone",
+            "gas.confined_space"
+          ],
+          "nextStepId": null,
+          "criticalFail": true
+        }
+      ],
+      "visualCommands": [
+        {
+          "type": "showTrainingBoundary",
+          "entityId": "restricted_boundary",
+          "practiceOnly": true
+        }
+      ]
+    },
+    {
+      "stepId": "gas_03_ppe",
+      "objectiveKey": "gas.step.ppe.objective",
+      "narrationKey": "gas.step.ppe.narration",
+      "timeLimitSec": null,
+      "allowedActions": [
+        {
+          "actionId": "select_configured_ppe_option",
+          "result": "correct",
+          "scoreDelta": 20,
+          "feedbackKey": "gas.feedback.ppe_correct",
+          "weakTopicTags": [],
+          "nextStepId": "gas_04_buddy",
+          "criticalFail": false
+        },
+        {
+          "actionId": "select_unapproved_demo_option",
+          "result": "incorrect",
+          "scoreDelta": -10,
+          "feedbackKey": "gas.feedback.ppe_incorrect",
+          "weakTopicTags": [
+            "gas.ppe"
+          ],
+          "nextStepId": null,
+          "criticalFail": false
+        }
+      ],
+      "visualCommands": [
+        {
+          "type": "enableInteraction",
+          "entityId": "ppe_choices"
+        }
+      ]
+    },
+    {
+      "stepId": "gas_04_buddy",
+      "objectiveKey": "gas.step.buddy.objective",
+      "narrationKey": "gas.step.buddy.narration",
+      "timeLimitSec": null,
+      "allowedActions": [
+        {
+          "actionId": "confirm_buddy_attendant_sequence",
+          "result": "correct",
+          "scoreDelta": 20,
+          "feedbackKey": "gas.feedback.buddy_correct",
+          "weakTopicTags": [],
+          "nextStepId": "gas_05_evacuate",
+          "criticalFail": false
+        },
+        {
+          "actionId": "proceed_alone",
+          "result": "incorrect",
+          "scoreDelta": -20,
+          "feedbackKey": "gas.feedback.buddy_missed",
+          "weakTopicTags": [
+            "gas.buddy_system"
+          ],
+          "nextStepId": null,
+          "criticalFail": true
+        }
+      ],
+      "visualCommands": [
+        {
+          "type": "enableInteraction",
+          "entityId": "buddy_token"
+        }
+      ]
+    },
+    {
+      "stepId": "gas_05_evacuate",
+      "objectiveKey": "gas.step.evacuate.objective",
+      "narrationKey": "gas.step.evacuate.narration",
+      "timeLimitSec": null,
+      "allowedActions": [
+        {
+          "actionId": "report_and_use_safe_route",
+          "result": "correct",
+          "scoreDelta": 25,
+          "feedbackKey": "gas.feedback.evacuate_correct",
+          "weakTopicTags": [],
+          "nextStepId": null,
+          "criticalFail": false
+        },
+        {
+          "actionId": "use_restricted_route",
+          "result": "incorrect",
+          "scoreDelta": -20,
+          "feedbackKey": "gas.feedback.evacuate_incorrect",
+          "weakTopicTags": [
+            "gas.evacuation"
+          ],
+          "nextStepId": null,
+          "criticalFail": true
+        }
+      ],
+      "visualCommands": [
+        {
+          "type": "highlight",
+          "entityId": "safe_route_marker"
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "passThreshold": 70,
+    "categories": {
+      "alarm_recognition": 15,
+      "hazard_zone": 20,
+      "ppe": 20,
+      "buddy_system": 20,
+      "evacuation_reporting": 25
+    },
+    "criticalFailForcesFail": true
+  },
+  "contentValidation": {
+    "status": "demo-unvalidated",
+    "version": "demo-1",
+    "reviewer": null,
+    "reviewedAt": null
+  }
+}

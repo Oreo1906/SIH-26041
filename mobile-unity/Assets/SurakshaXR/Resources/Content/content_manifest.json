@@ -1,0 +1,18 @@
+{
+  "contentVersion": "preview-0.1.0",
+  "validationStatus": "demo-unvalidated",
+  "reviewer": null,
+  "builtAt": "2026-10-02T09:53:03Z",
+  "files": {
+    "micro/fire.json": "91dcab41902b84add935b82c6643691966925b8458b548eefe4cc52dde7fd43b",
+    "micro/gas.json": "5f544b876b8b6d49d95672a2d7e469fa4566cdf8338ebb38ef6afbc08b62efac",
+    "modules.json": "558460cc1ff9bcc303d919411e6aa78848ef4a6b5b922bc718077d13651f063e",
+    "policies/fire.json": "4d671147abd541194c270cf0b11799d19eed46042a5d3c34b596c16466dbc997",
+    "policies/gas.json": "7938e047e8bd36e8139ab61ecc3e595479a1fef84abcec0526c0566c4b855e2c",
+    "questions/fire_v1.json": "8298835a7f3bae3054b4991bbf589d517df3d3b0e96ac91b82450720799826d2",
+    "questions/gas_v1.json": "d8e4be27d82057f6150e93835a5b6fe2f4c3dbaa1d5e6bef3fb851b64f9c93e5",
+    "scenarios/fire_v1.json": "38196a0886ebd495436d8e3ab14c869eb8d536e643e0738981c67ef50a0d1bf1",
+    "scenarios/gas_v1.json": "2fb3aa041b725a0ffd0f5a26009eca160a8dd98f0433b6dc8ddceaea47aae9e3",
+    "session-options.json": "d1d298092cf9abcd3316f6a1f8591bc6e8446771e913b39351fac724110b6d09"
+  }
+}

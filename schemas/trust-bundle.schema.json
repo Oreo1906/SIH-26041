@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://surakshaxr.local/schemas/trust-bundle.schema.json",
+  "title": "SurakshaXR Trust Bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "v",
+    "bundleVersion",
+    "issuedAt",
+    "signers",
+    "rootSignature"
+  ],
+  "properties": {
+    "v": {
+      "type": "integer",
+      "const": 1
+    },
+    "bundleVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "issuedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "signers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "signerId",
+          "displayName",
+          "publicKeyB64",
+          "validFrom",
+          "revoked"
+        ],
+        "properties": {
+          "signerId": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "publicKeyB64": {
+            "type": "string"
+          },
+          "validFrom": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "validTo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "revoked": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "rootSignature": {
+      "type": "string"
+    }
+  }
+}

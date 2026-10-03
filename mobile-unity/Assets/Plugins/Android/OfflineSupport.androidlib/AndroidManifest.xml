@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="in.surakshaxr.offline">
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <uses-feature android:name="android.hardware.camera" android:required="false" tools:replace="android:required" />
+  <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" tools:replace="android:required" />
+  <uses-feature android:name="android.hardware.camera.ar" android:required="false" tools:replace="android:required" />
+  <application android:allowBackup="false" tools:replace="android:allowBackup">
+    <meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="true" />
+    <receiver android:name="in.surakshaxr.storage.RefresherReminder" android:exported="false">
+      <intent-filter><action android:name="android.intent.action.BOOT_COMPLETED" /><action android:name="android.intent.action.MY_PACKAGE_REPLACED" /></intent-filter>
+    </receiver>
+  </application>
+</manifest>

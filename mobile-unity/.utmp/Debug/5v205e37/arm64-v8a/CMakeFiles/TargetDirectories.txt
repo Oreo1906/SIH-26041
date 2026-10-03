@@ -1,0 +1,8 @@
+C:/Users/Shreya/Downloads/sih26041_codex_pack/mobile-unity/.utmp/Debug/5v205e37/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/Shreya/Downloads/sih26041_codex_pack/mobile-unity/.utmp/Debug/5v205e37/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/Shreya/Downloads/sih26041_codex_pack/mobile-unity/.utmp/Debug/5v205e37/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/Shreya/Downloads/sih26041_codex_pack/mobile-unity/.utmp/Debug/5v205e37/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/Shreya/Downloads/sih26041_codex_pack/mobile-unity/.utmp/Debug/5v205e37/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+C:/Users/Shreya/Downloads/sih26041_codex_pack/mobile-unity/.utmp/Debug/5v205e37/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+C:/Users/Shreya/Downloads/sih26041_codex_pack/mobile-unity/.utmp/Debug/5v205e37/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+C:/Users/Shreya/Downloads/sih26041_codex_pack/mobile-unity/.utmp/Debug/5v205e37/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,7 @@
+{
+  "name": "SurakshaXR.Security",
+  "references": ["SurakshaXR.Domain"],
+  "overrideReferences": true,
+  "precompiledReferences": ["Newtonsoft.Json.dll", "BouncyCastle.Cryptography.dll", "zxing.dll"],
+  "noEngineReferences": true
+}

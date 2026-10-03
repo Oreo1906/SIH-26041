@@ -1,0 +1,142 @@
+[
+  {
+    "page": 1,
+    "chars": 2303,
+    "first_lines": [
+      "SURAKSHAXR / ENGINEERING EXPLAINED",
+      "SurakshaXR Internal Architecture and",
+      "Workflow",
+      "How the Android training app is assembled and how information moves through it"
+    ]
+  },
+  {
+    "page": 2,
+    "chars": 2009,
+    "first_lines": [
+      "02 / INTERNAL GUIDE",
+      "The mobile technology stack",
+      "Unity runs the Android application, manages the scene and renders its UI. Most app logic is written in C#.",
+      "Small Java bridges give that code access to Android facilities such as SQLite, Keystore and notifications."
+    ]
+  },
+  {
+    "page": 3,
+    "chars": 1748,
+    "first_lines": [
+      "03 / INTERNAL GUIDE",
+      "Supporting tools and project assets",
+      "The repository also contains Python backend code and a React web application. They are separate",
+      "processes from the Android app. Their dependency files belong to their own folders; they are not"
+    ]
+  },
+  {
+    "page": 4,
+    "chars": 1806,
+    "first_lines": [
+      "04 / INTERNAL GUIDE",
+      "How the architecture fits together",
+      "The Android application has a presentation layer, an application-service layer, a domain layer, infrastructure",
+      "and security helpers. The diagram shows responsibility and information flow; it is not a map of separate"
+    ]
+  },
+  {
+    "page": 5,
+    "chars": 1779,
+    "first_lines": [
+      "05 / INTERNAL GUIDE",
+      "What happens when the app opens",
+      "The Bootstrap scene loads, and a runtime initialization hook creates PreviewApp. Its Awake method creates",
+      "the UI Toolkit document, opens local services and decides which screen to show. Navigation is primarily a"
+    ]
+  },
+  {
+    "page": 6,
+    "chars": 2463,
+    "first_lines": [
+      "06 / INTERNAL GUIDE",
+      "How scenarios and actions work",
+      "Training content is data. A module points to scenario and question-bank IDs. A scenario contains named",
+      "entities, logical anchors, steps, allowed actions, score changes, feedback keys and visual commands. A"
+    ]
+  },
+  {
+    "page": 7,
+    "chars": 2408,
+    "first_lines": [
+      "07 / INTERNAL GUIDE",
+      "How assessment and refreshers are",
+      "calculated",
+      "Practice, assessment and refresher are modes of the same session system. Practice contains guided"
+    ]
+  },
+  {
+    "page": 8,
+    "chars": 1969,
+    "first_lines": [
+      "08 / INTERNAL GUIDE",
+      "How automatic Ground AR is placed",
+      "AR Foundation is the Unity-facing API. ARCore supplies the phone's native tracking and detected planes.",
+      "OptionalArSession starts these services only after AR entry and camera permission; it creates ARSession,"
+    ]
+  },
+  {
+    "page": 9,
+    "chars": 2232,
+    "first_lines": [
+      "09 / INTERNAL GUIDE",
+      "How the scene is constructed and moved",
+      "ArGroundLayout transforms ScenarioLayouts.json from local coordinates into world positions. SimulatorView",
+      "applies the same template to Ground AR, Immersive Mine and 3D. An entity's logical ID connects its"
+    ]
+  },
+  {
+    "page": 10,
+    "chars": 2215,
+    "first_lines": [
+      "10 / INTERNAL GUIDE",
+      "How information is stored offline",
+      "LocalStore owns the SQLite schema and record operations. On Android, SqliteConnection delegates to",
+      "LocalDatabase.java through JNI; that bridge uses Android SQLiteDatabase. Although PreviewApp supplies a"
+    ]
+  },
+  {
+    "page": 11,
+    "chars": 2075,
+    "first_lines": [
+      "11 / INTERNAL GUIDE",
+      "How QR certificates are created and checked",
+      "A certificate is signed data represented as a QR code. Its payload identifies the worker, module and version,",
+      "attempt, score, issue time, refresher date and signer. The QR carries the payload and signature, so a verifier"
+    ]
+  },
+  {
+    "page": 12,
+    "chars": 2336,
+    "first_lines": [
+      "12 / INTERNAL GUIDE",
+      "How the interface and Android services work",
+      "PreviewApp constructs screens with UI Toolkit VisualElements and applies AppTheme styles and AppIcons.",
+      "Render rebuilds the current screen from application state. It also resets the joystick and old control"
+    ]
+  },
+  {
+    "page": 13,
+    "chars": 2311,
+    "first_lines": [
+      "13 / INTERNAL GUIDE",
+      "How the web code and build process work",
+      "The React app and FastAPI service are separate from the worker app. App.tsx offers a connection-check",
+      "button that calls getHealth and fetches /health, with a five-second timeout. It does not send that request at"
+    ]
+  },
+  {
+    "page": 14,
+    "chars": 2409,
+    "first_lines": [
+      "14 / INTERNAL GUIDE",
+      "Where to read the implementation",
+      "Paths are relative to the repository root. In the list below, U means mobile-unity/Assets/SurakshaXR. Start",
+      "with PreviewApp, TrainingSessionService and ScenarioRuntime, then follow the renderer or storage branch"
+    ]
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "device": "emulator-5554",
+  "airplaneMode": "1",
+  "integrity": "ok",
+  "foreignKeyViolations": 0,
+  "workers": 3,
+  "attempts": [
+    {
+      "module": "fire-response",
+      "mode": "practice",
+      "score": 100.0,
+      "passed": 0
+    },
+    {
+      "module": "fire-response",
+      "mode": "assessment",
+      "score": 100.0,
+      "passed": 1
+    },
+    {
+      "module": "gas-confined-space",
+      "mode": "practice",
+      "score": 100.0,
+      "passed": 0
+    },
+    {
+      "module": "gas-confined-space",
+      "mode": "assessment",
+      "score": 100.0,
+      "passed": 1
+    },
+    {
+      "module": "gas-confined-space",
+      "mode": "refresher",
+      "score": 100.0,
+      "passed": 1
+    }
+  ],
+  "certificates": 2,
+  "certificateVerification": [
+    "VERIFIED_TRUSTED",
+    "VERIFIED_TRUSTED"
+  ],
+  "refreshers": [
+    {
+      "module": "fire-response",
+      "status": "pending"
+    },
+    {
+      "module": "gas-confined-space",
+      "status": "completed"
+    },
+    {
+      "module": "gas-confined-space",
+      "status": "pending"
+    }
+  ],
+  "pendingOutboxEvents": 14
+}

@@ -1,0 +1,45 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.pem
+*.key
+.private/
+
+# Python / local databases
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+*.db
+*.db-shm
+*.db-wal
+.coverage
+
+# JavaScript / build outputs
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+.cache/
+artifacts/
+*.log
+
+# Unity generated files; source .meta files must be retained
+mobile-unity/[Ll]ibrary/
+mobile-unity/[Tt]emp/
+mobile-unity/[Oo]bj/
+mobile-unity/[Ll]ogs/
+mobile-unity/[Uu]ser[Ss]ettings/
+mobile-unity/[Mm]emoryCaptures/
+mobile-unity/[Rr]ecordings/
+mobile-unity/*.csproj
+mobile-unity/*.sln
+.vs/
+.idea/
+.DS_Store
+Thumbs.db

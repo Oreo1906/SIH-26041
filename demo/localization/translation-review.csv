@@ -1,0 +1,276 @@
+﻿key,english_reference,hindi_draft,santali_ol_chiki,language_reviewer,safety_reviewer,status
+ui.brand,SURAKSHA XR,सुरक्षा XR,,,,needs-review
+ui.tagline,Practice today. Return home safely.,आज अभ्यास करें। सुरक्षित घर लौटें।,,,,needs-review
+ui.preview,DEVELOPMENT PREVIEW,विकासाधीन संस्करण,,,,needs-review
+ui.offline,Training available offline,प्रशिक्षण ऑफलाइन उपलब्ध है,,,,needs-review
+ui.language,Choose your language,अपनी भाषा चुनें,,,,needs-review
+ui.worker,Choose a worker,कर्मचारी चुनें,,,,needs-review
+ui.add_worker,Add worker,कर्मचारी जोड़ें,,,,needs-review
+ui.worker_code,Worker code,कर्मचारी कोड,,,,needs-review
+ui.display_name,Display name,नाम,,,,needs-review
+ui.save,Save profile,प्रोफ़ाइल सहेजें,,,,needs-review
+ui.home,Training home,प्रशिक्षण,,,,needs-review
+ui.back,Back,वापस,,,,needs-review
+ui.settings,Settings & safety notice,सेटिंग और सुरक्षा सूचना,,,,needs-review
+ui.history,Training history,प्रशिक्षण इतिहास,,,,needs-review
+ui.certificates,Certificates,प्रमाणपत्र,,,,needs-review
+ui.empty_history,Your completed practice sessions will appear here.,पूरा किया गया प्रशिक्षण यहाँ दिखेगा।,,,,needs-review
+ui.empty_certificates,No certificates yet. Complete a passing assessment to receive a signed demo certificate.,अभी कोई प्रमाणपत्र नहीं है। डेमो प्रमाणपत्र के लिए मूल्यांकन में सफल हों।,,,,needs-review
+ui.safety,Unvalidated demo content. This preview is not an approved site procedure or a statutory certificate. Follow your site SOP and authorized trainer.,यह डेमो सामग्री अभी विशेषज्ञ द्वारा प्रमाणित नहीं है। यह स्वीकृत कार्यविधि या वैधानिक प्रमाणपत्र नहीं है। अपने कार्यस्थल की स्वीकृत कार्यविधि और अधिकृत प्रशिक्षक के निर्देश मानें।,,,,needs-review
+ui.translation_notice,Translations are draft content requiring human and safety review. Santali entries are clearly marked English review placeholders.,अनुवाद का भाषा और सुरक्षा विशेषज्ञों द्वारा पुनरीक्षण आवश्यक है। संथाली की अधूरी प्रविष्टियों में अंग्रेज़ी स्पष्ट रूप से चिह्नित है।,,,,needs-review
+ui.practice,Start practice,अभ्यास शुरू करें,,,,needs-review
+ui.practice_done,Practice completed,अभ्यास पूरा हुआ,,,,needs-review
+ui.assessment_pending,Knowledge assessment and certification are under development.,मूल्यांकन और प्रमाणन का विकास जारी है।,,,,needs-review
+ui.fallback,"Use the offline 3D simulator, or choose AR on a supported device with its AR service already installed.",ऑफलाइन 3D सिम्युलेटर का उपयोग करें। समर्थित डिवाइस पर AR सेवा पहले से स्थापित होने पर AR भी चुन सकते हैं।,,,,needs-review
+ui.ar_mode,AR tabletop training,AR में लघु प्रशिक्षण दृश्य,,,,needs-review
+ui.simulator,Use 3D simulator,3D सिम्युलेटर उपयोग करें,,,,needs-review
+ui.ar_checking,Checking AR on this device…,डिवाइस पर AR की जाँच हो रही है…,,,,needs-review
+ui.ar_unavailable,AR is unavailable or its service is not installed. Continue offline in 3D.,AR उपलब्ध नहीं है या उसकी सेवा स्थापित नहीं है। ऑफलाइन 3D में जारी रखें।,,,,needs-review
+ui.ar_scan,"Point at a clear, well-lit floor or table. Move the phone slowly, then tap the surface.","कैमरा साफ़, रोशनी वाले फर्श या मेज़ की ओर रखें। फ़ोन धीरे हिलाएँ, फिर सतह पर टैप करें।",,,,needs-review
+ui.ar_surface,Surface found. Confirm placement to begin.,सतह मिल गई। शुरू करने के लिए स्थान की पुष्टि करें।,,,,needs-review
+ui.ar_tracking,Tracking paused. Point the camera back at the training surface.,ट्रैकिंग रुकी है। कैमरा फिर प्रशिक्षण सतह की ओर करें।,,,,needs-review
+ui.ar_timeout,No stable surface yet. Try better lighting or continue in 3D.,स्थिर सतह अभी नहीं मिली। बेहतर रोशनी में कोशिश करें या 3D चुनें।,,,,needs-review
+ui.ar_place,Confirm & start AR,पुष्टि करके AR शुरू करें,,,,needs-review
+ui.ar_reset,Reset placement,स्थान फिर चुनें,,,,needs-review
+ui.ar_denied,Camera permission denied. Training is available offline in 3D.,कैमरे की अनुमति नहीं मिली। ऑफलाइन 3D प्रशिक्षण उपलब्ध है।,,,,needs-review
+ui.ar_help,"Keep your surroundings clear. This miniature scene uses the same actions and scoring as 3D. Tap a surface on the left to select the origin, then confirm.","आसपास जगह खाली रखें। लघु दृश्य में 3D जैसी क्रियाएँ और अंक नियम हैं। स्थान चुनने के लिए बाईं ओर सतह पर टैप करें, फिर पुष्टि करें।",,,,needs-review
+ui.controls,"Drag the joystick to walk. Drag the scene above it to look. Approach the object, then choose an action.",चलने के लिए जॉयस्टिक खींचें। देखने के लिए उसके ऊपर दृश्य खींचें। वस्तु के पास जाकर क्रिया चुनें।,,,,needs-review
+ui.pause,Pause,रोकें,,,,needs-review
+ui.resume,Resume,जारी रखें,,,,needs-review
+ui.exit,Leave training,प्रशिक्षण छोड़ें,,,,needs-review
+ui.paused,Training paused,प्रशिक्षण रुका है,,,,needs-review
+ui.continue,Continue,आगे बढ़ें,,,,needs-review
+ui.retry,Try again,फिर कोशिश करें,,,,needs-review
+ui.result,Training result,प्रशिक्षण परिणाम,,,,needs-review
+ui.saved,Saved on this device,इस डिवाइस पर सहेजा गया,,,,needs-review
+ui.score,Score,अंक,,,,needs-review
+ui.weak_topics,Topics to revisit,दोहराने के विषय,,,,needs-review
+ui.no_weak_topics,No weak topics found in this session.,इस सत्र में कोई कमज़ोर विषय नहीं मिला।,,,,needs-review
+ui.again,Practice again,फिर अभ्यास करें,,,,needs-review
+ui.distance,Approach the highlighted object to interact.,क्रिया करने के लिए वस्तु के पास जाएँ।,,,,needs-review
+ui.interact,Choose an action,क्रिया चुनें,,,,needs-review
+ui.error,Could not complete this operation. Your existing records are preserved. Restart and try again.,यह काम पूरा नहीं हुआ। पुराने रिकॉर्ड सुरक्षित हैं। ऐप फिर खोलकर कोशिश करें।,,,,needs-review
+ui.invalid_profile,Enter a unique worker code and a display name.,एक अलग कर्मचारी कोड और नाम दर्ज करें।,,,,needs-review
+ui.pending,Records waiting to sync,सिंक के लिए लंबित रिकॉर्ड,,,,needs-review
+ui.local_data,Profiles and practice history are saved locally. Sync is not enabled in this preview.,प्रोफ़ाइल और प्रशिक्षण इतिहास इस डिवाइस पर सहेजे जाते हैं। इस संस्करण में सिंक अभी उपलब्ध नहीं है।,,,,needs-review
+ui.none,None,कोई नहीं,,,,needs-review
+ui.demo,DEMO • NOT AN APPROVED SOP,डेमो • स्वीकृत कार्यविधि नहीं,,,,needs-review
+fire.module.title,Fire & Explosion Response,आग और विस्फोट प्रतिक्रिया,,,,needs-review
+fire.module.description,"Recognize the hazard, raise the alarm, make the configured demo decision and reach the muster area.","खतरा पहचानें, अलार्म बजाएँ, डेमो में निर्धारित निर्णय लें और एकत्रीकरण क्षेत्र पहुँचें।",,,,needs-review
+gas.module.title,Gas Leak & Confined Space,गैस रिसाव और सीमित स्थान,,,,needs-review
+gas.module.description,"Recognize the demo detector alarm, restricted area, equipment and buddy sequence, then take the safe route.","डेमो डिटेक्टर का अलार्म, प्रतिबंधित क्षेत्र, उपकरण और साथी प्रक्रिया पहचानें; फिर सुरक्षित रास्ता लें।",,,,needs-review
+common.safe_exit,Safe exit,सुरक्षित निकास,,,,needs-review
+common.blocked_exit,Blocked exit,अवरुद्ध निकास,,,,needs-review
+common.safe_route,Safe route,सुरक्षित रास्ता,,,,needs-review
+fire.entity.fire,Demo fire hazard,डेमो आग का खतरा,,,,needs-review
+fire.entity.alarm,Alarm panel,अलार्म पैनल,,,,needs-review
+fire.entity.extinguisher,Demo equipment,डेमो उपकरण,,,,needs-review
+gas.entity.detector,Demo detector,डेमो गैस डिटेक्टर,,,,needs-review
+gas.entity.restricted_zone,Restricted area,प्रतिबंधित क्षेत्र,,,,needs-review
+gas.entity.ppe,Configured demo PPE,डेमो में निर्धारित व्यक्तिगत सुरक्षा उपकरण,,,,needs-review
+gas.entity.buddy,Buddy / attendant station,साथी / परिचर स्थान,,,,needs-review
+ui.assessment,Start assessment,मूल्यांकन शुरू करें,,,,needs-review
+ui.practice_required,Complete practice once to unlock assessment.,मूल्यांकन खोलने के लिए एक बार अभ्यास पूरा करें।,,,,needs-review
+topic.fire.equipment,Extinguisher readiness and exit access,अग्निशामक की तैयारी और निकास तक पहुँच,,,,needs-review
+ui.micro_step,Micro-training step,लघु प्रशिक्षण चरण,,,,needs-review
+ui.start_refresher,Start short refresher,लघु पुनःप्रशिक्षण शुरू करें,,,,needs-review
+ui.refresher_complete,Refresher completed,पुनःप्रशिक्षण पूरा हुआ,,,,needs-review
+ui.scan_qr,Scan QR with camera,कैमरे से QR स्कैन करें,,,,needs-review
+ui.scan_help,Hold the entire QR code inside the camera view.,पूरा QR कोड कैमरे के दृश्य में रखें।,,,,needs-review
+ui.camera_denied,Camera permission denied. You can paste the QR payload below to verify offline.,कैमरे की अनुमति नहीं मिली। ऑफलाइन जाँच के लिए नीचे QR डेटा पेस्ट कर सकते हैं।,,,,needs-review
+ui.camera_unavailable,Camera unavailable. Paste the QR payload below to verify offline.,कैमरा उपलब्ध नहीं है। ऑफलाइन जाँच के लिए नीचे QR डेटा पेस्ट करें।,,,,needs-review
+ui.reminder_help,Optional reminders tell you when short refresher training is due. They work offline. Android battery settings can delay delivery; due dates remain visible in Refreshers.,वैकल्पिक अनुस्मारक पुनःप्रशिक्षण की तारीख याद दिलाते हैं और ऑफलाइन काम करते हैं। Android की बैटरी सेटिंग से सूचना देर से आ सकती है; तारीख ऐप में उपलब्ध रहेगी।,,,,needs-review
+ui.enable_reminders,Enable offline reminders,ऑफलाइन अनुस्मारक चालू करें,,,,needs-review
+ui.disable_reminders,Disable reminders,अनुस्मारक बंद करें,,,,needs-review
+ui.reminders_enabled,Reminders enabled,अनुस्मारक चालू हैं,,,,needs-review
+ui.reminders_disabled,Reminders disabled,अनुस्मारक बंद हैं,,,,needs-review
+ui.reminders_denied,Notification permission denied. Refreshers remain available in the app.,सूचना की अनुमति नहीं मिली। ऐप में पुनःप्रशिक्षण उपलब्ध है।,,,,needs-review
+ui.reminder_title,SurakshaXR refresher,सुरक्षा XR पुनःप्रशिक्षण,,,,needs-review
+ui.reminder_message,Short refresher training is due. Open SurakshaXR to train offline.,लघु पुनःप्रशिक्षण का समय है। ऑफलाइन प्रशिक्षण के लिए सुरक्षा XR खोलें।,,,,needs-review
+ui.knowledge,Knowledge assessment,ज्ञान मूल्यांकन,,,,needs-review
+ui.submit_answer,Submit answer,उत्तर जमा करें,,,,needs-review
+ui.choose_answer,Choose an answer to continue.,आगे बढ़ने के लिए उत्तर चुनें।,,,,needs-review
+ui.passed,Passed,सफल,,,,needs-review
+ui.failed,Needs retraining,दोबारा प्रशिक्षण आवश्यक,,,,needs-review
+ui.refresher,Refresher,पुनःप्रशिक्षण,,,,needs-review
+ui.certificate,Training Competency Certificate,प्रशिक्षण दक्षता प्रमाणपत्र,,,,needs-review
+ui.certificate_notice,DEMO ONLY. Legal recognition depends on the authorized issuing organization and approved training program. This prototype uses a demo issuer; replace it with provisioned production keys.,केवल डेमो। कानूनी मान्यता अधिकृत जारीकर्ता और स्वीकृत प्रशिक्षण कार्यक्रम पर निर्भर है। इस संस्करण में डेमो जारीकर्ता है; वास्तविक उपयोग के लिए अधिकृत कुंजियाँ आवश्यक हैं।,,,,needs-review
+ui.verify,Verify certificate offline,प्रमाणपत्र की ऑफलाइन जाँच,,,,needs-review
+ui.verify_help,Paste a certificate QR payload. Verification uses the signed trust bundle stored on this device.,प्रमाणपत्र का QR डेटा पेस्ट करें। जाँच इस डिवाइस पर सहेजी गई हस्ताक्षरित विश्वसनीयता सूची से होती है।,,,,needs-review
+ui.copy_qr,Copy QR payload,QR डेटा कॉपी करें,,,,needs-review
+ui.trust_updated,Trust data last updated,विश्वसनीयता सूची का अंतिम अद्यतन,,,,needs-review
+ui.refreshers,Refreshers,पुनःप्रशिक्षण,,,,needs-review
+ui.no_refreshers,Complete an assessment to schedule your refresher.,पुनःप्रशिक्षण की तारीख तय करने के लिए मूल्यांकन पूरा करें।,,,,needs-review
+ui.due,Refresher due,पुनःप्रशिक्षण की तारीख,,,,needs-review
+verify.VERIFIED_TRUSTED,Signature verified · trusted demo issuer,हस्ताक्षर सत्यापित • विश्वसनीय डेमो जारीकर्ता,,,,needs-review
+verify.UNKNOWN_SIGNER_UNVERIFIED,Unknown issuer · signature could not be verified,अज्ञात जारीकर्ता • हस्ताक्षर की जाँच नहीं हो सकी,,,,needs-review
+verify.SIGNER_NOT_TRUSTED,Signature valid · issuer revoked or outside validity period,हस्ताक्षर सही • जारीकर्ता निरस्त या वैधता अवधि से बाहर,,,,needs-review
+verify.INVALID_SIGNATURE,Invalid signature · certificate may have been altered,हस्ताक्षर अमान्य • प्रमाणपत्र बदला गया हो सकता है,,,,needs-review
+verify.UNSUPPORTED_VERSION,Unsupported certificate format,यह प्रमाणपत्र प्रारूप समर्थित नहीं है,,,,needs-review
+verify.PARSE_ERROR,Invalid or incomplete QR payload,QR डेटा अमान्य या अधूरा है,,,,needs-review
+fire.question.recognition.prompt,"In this demo, what should you do when the marked fire hazard appears?",इस डेमो में चिह्नित आग का खतरा दिखने पर क्या करना चाहिए?,,,,needs-review
+fire.question.recognition.explanation,The fixture starts with hazard recognition.,डेमो खतरे की पहचान से शुरू होता है।,,,,needs-review
+fire.question.recognition.option.recognize,Identify the marked hazard,चिह्नित खतरा पहचानें,,,,needs-review
+fire.question.recognition.option.ignore,Ignore it,उसकी अनदेखी करें,,,,needs-review
+fire.question.recognition.option.continue_work,Continue the task without responding,बिना प्रतिक्रिया दिए काम जारी रखें,,,,needs-review
+fire.question.alarm.prompt,Which action satisfies the alarm step in this demo?,कौन सी क्रिया इस डेमो का अलार्म चरण पूरा करती है?,,,,needs-review
+fire.question.alarm.explanation,The configured alarm action must be completed.,निर्धारित अलार्म क्रिया पूरी करना आवश्यक है।,,,,needs-review
+fire.question.alarm.option.walk_away,Move away without notification,सूचना दिए बिना दूर चले जाएँ,,,,needs-review
+fire.question.alarm.option.raise,Raise the alarm,अलार्म बजाएँ,,,,needs-review
+fire.question.alarm.option.skip,Skip directly to the result,सीधे परिणाम पर जाएँ,,,,needs-review
+fire.question.equipment_permission.prompt,When does this demo permit the training equipment interaction?,इस डेमो में प्रशिक्षण उपकरण कब उपयोग कर सकते हैं?,,,,needs-review
+fire.question.equipment_permission.explanation,Real equipment decisions require approved site content; the demo only permits its configured interaction.,वास्तविक उपकरण के निर्णय स्वीकृत कार्यस्थल सामग्री से होने चाहिए। डेमो केवल निर्धारित क्रिया की अनुमति देता है।,,,,needs-review
+fire.question.equipment_permission.option.always,In every fire regardless of conditions,"परिस्थिति चाहे जो हो, हर आग में",,,,needs-review
+fire.question.equipment_permission.option.configured,When this scenario explicitly permits it,जब परिदृश्य स्पष्ट अनुमति दे,,,,needs-review
+fire.question.equipment_permission.option.unreviewed,Whenever a trainee chooses it,जब भी प्रशिक्षु चाहे,,,,needs-review
+fire.question.route.prompt,Which route should be selected in the evacuation step?,निकासी चरण में कौन सा रास्ता चुनना चाहिए?,,,,needs-review
+fire.question.route.explanation,The supplied fixture identifies a safe exit and treats blocked-route selection as a critical error.,डेमो सुरक्षित निकास चिह्नित करता है। अवरुद्ध रास्ता चुनना गंभीर त्रुटि है।,,,,needs-review
+fire.question.route.option.blocked,The marked blocked route,चिह्नित अवरुद्ध रास्ता,,,,needs-review
+fire.question.route.option.hazard,A route back into the hazard,खतरे में वापस जाने वाला रास्ता,,,,needs-review
+fire.question.route.option.safe,The marked safe exit and muster route,चिह्नित सुरक्षित निकास और एकत्रीकरण रास्ता,,,,needs-review
+fire.question.reentry.prompt,How is re-entering the hazard treated by this scenario?,इस परिदृश्य में खतरे में दोबारा प्रवेश को क्या माना गया है?,,,,needs-review
+fire.question.reentry.explanation,The re-entry action is marked criticalFail in the supplied fixture.,डेमो के नियमों में दोबारा प्रवेश गंभीर त्रुटि है।,,,,needs-review
+fire.question.reentry.option.bonus,A bonus action,अतिरिक्त अंक देने वाली क्रिया,,,,needs-review
+fire.question.reentry.option.critical,A configured critical error,नियमों में निर्धारित गंभीर त्रुटि,,,,needs-review
+fire.question.reentry.option.required,A required completion step,पूरा करने का अनिवार्य चरण,,,,needs-review
+fire.question.sequence.prompt,Which comes after recognizing the hazard in the configured sequence?,निर्धारित क्रम में खतरा पहचानने के बाद क्या आता है?,,,,needs-review
+fire.question.sequence.explanation,The shared scenario definition transitions from recognition to alarm.,साझा परिदृश्य पहचान के बाद अलार्म चरण पर जाता है।,,,,needs-review
+fire.question.sequence.option.certificate,Certificate issuance,प्रमाणपत्र जारी करना,,,,needs-review
+fire.question.sequence.option.muster_first,Skip the alarm and go straight to the result,अलार्म छोड़कर सीधे परिणाम पर जाना,,,,needs-review
+fire.question.sequence.option.alarm,The alarm step,अलार्म चरण,,,,needs-review
+fire.question.muster.prompt,Which action completes the configured Fire practice?,कौन सी क्रिया आग का निर्धारित अभ्यास पूरा करती है?,,,,needs-review
+fire.question.muster.explanation,The terminal action combines safe exit and muster in this demo fixture.,डेमो की अंतिम क्रिया में सुरक्षित निकास और एकत्रीकरण दोनों हैं।,,,,needs-review
+fire.question.muster.option.muster,Reach the safe exit and muster area,सुरक्षित निकास और एकत्रीकरण क्षेत्र पहुँचना,,,,needs-review
+fire.question.muster.option.stop_midway,Stop before completing the route,रास्ता पूरा होने से पहले रुकना,,,,needs-review
+fire.question.muster.option.blocked,Select the blocked route,अवरुद्ध रास्ता चुनना,,,,needs-review
+fire.question.approved_content.prompt,What governs real equipment and response decisions at a worksite?,कार्यस्थल पर वास्तविक उपकरण और प्रतिक्रिया का निर्णय किसके अनुसार होना चाहिए?,,,,needs-review
+fire.question.approved_content.explanation,This prototype reinforces approved procedures; it does not authorize real-world operations.,यह डेमो स्वीकृत प्रक्रियाओं का अभ्यास कराता है; वास्तविक काम की अनुमति नहीं देता।,,,,needs-review
+fire.question.approved_content.option.demo_alone,This unvalidated app demo alone,केवल इस अप्रमाणित ऐप डेमो के अनुसार,,,,needs-review
+fire.question.approved_content.option.site_sop,Approved site procedures and authorized training,स्वीकृत कार्यस्थल प्रक्रियाओं और अधिकृत प्रशिक्षण के अनुसार,,,,needs-review
+fire.question.approved_content.option.score_only,The numeric demo score alone,केवल डेमो के अंकों के अनुसार,,,,needs-review
+gas.question.detector.prompt,What is the first configured response to the demo detector alarm?,डेमो डिटेक्टर अलार्म पर पहली निर्धारित प्रतिक्रिया क्या है?,,,,needs-review
+gas.question.detector.explanation,The supplied fixture begins with recognizing the detector alarm.,डेमो डिटेक्टर के अलार्म की पहचान से शुरू होता है।,,,,needs-review
+gas.question.detector.option.ignore,Ignore the alarm,अलार्म की अनदेखी करना,,,,needs-review
+gas.question.detector.option.inspect,Inspect and recognize the alarm,अलार्म देखना और पहचानना,,,,needs-review
+gas.question.detector.option.enter,Enter the restricted area,प्रतिबंधित क्षेत्र में प्रवेश करना,,,,needs-review
+gas.question.threshold.prompt,Does this demo alarm provide a real safe-entry gas threshold?,क्या यह डेमो अलार्म सुरक्षित प्रवेश के लिए वास्तविक गैस सीमा देता है?,,,,needs-review
+gas.question.threshold.explanation,The detector state is DEMO_ALARM_NO_THRESHOLD.,यह केवल डेमो अलार्म है; इसमें वास्तविक गैस सीमा नहीं दी गई है।,,,,needs-review
+gas.question.threshold.option.yes,"Yes, it supplies a universal threshold","हाँ, यह हर जगह लागू सीमा देता है",,,,needs-review
+gas.question.threshold.option.guess,A threshold can be guessed from its colour,रंग देखकर सीमा का अनुमान लगा सकते हैं,,,,needs-review
+gas.question.threshold.option.no,No; real thresholds must come from approved site content,नहीं; वास्तविक सीमा स्वीकृत कार्यस्थल सामग्री से मिलनी चाहिए,,,,needs-review
+gas.question.visible_gas.prompt,Can a training boundary prove that gas outside it is safe or visibly detectable?,क्या प्रशिक्षण सीमा साबित करती है कि उसके बाहर गैस सुरक्षित है या आँखों से पहचानी जा सकती है?,,,,needs-review
+gas.question.visible_gas.explanation,The boundary is a teaching aid; the app does not measure real gas.,सीमा समझाने का साधन है; ऐप वास्तविक गैस नहीं मापता।,,,,needs-review
+gas.question.visible_gas.option.no,"No; it is a training overlay, not a measurement","नहीं; यह प्रशिक्षण संकेत है, माप नहीं",,,,needs-review
+gas.question.visible_gas.option.yes,"Yes, the overlay is a gas sensor","हाँ, यह संकेत गैस सेंसर है",,,,needs-review
+gas.question.visible_gas.option.colour,"Yes, gas safety can be decided by colour alone","हाँ, केवल रंग देखकर गैस की सुरक्षा तय कर सकते हैं",,,,needs-review
+gas.question.entry.prompt,How is unauthorized restricted-area entry treated in this demo?,इस डेमो में बिना अनुमति प्रतिबंधित क्षेत्र में प्रवेश को क्या माना गया है?,,,,needs-review
+gas.question.entry.explanation,The enter_restricted_zone action is marked criticalFail.,प्रतिबंधित क्षेत्र में प्रवेश की क्रिया गंभीर त्रुटि के रूप में निर्धारित है।,,,,needs-review
+gas.question.entry.option.optional,An optional shortcut,वैकल्पिक छोटा रास्ता,,,,needs-review
+gas.question.entry.option.critical,A configured critical error,निर्धारित गंभीर त्रुटि,,,,needs-review
+gas.question.entry.option.bonus,A bonus for speed,तेज़ी के लिए अतिरिक्त अंक,,,,needs-review
+gas.question.ppe.prompt,Which PPE choice is correct in this software fixture?,इस डेमो में सुरक्षा उपकरण का कौन सा विकल्प सही है?,,,,needs-review
+gas.question.ppe.explanation,Actual PPE selection must use approved site procedures and equipment requirements.,वास्तविक सुरक्षा उपकरण स्वीकृत कार्यस्थल प्रक्रिया और उपकरण की आवश्यकताओं के अनुसार चुनें।,,,,needs-review
+gas.question.ppe.option.any,Any available option,कोई भी उपलब्ध विकल्प,,,,needs-review
+gas.question.ppe.option.unapproved,The unapproved demo option,अस्वीकृत डेमो विकल्प,,,,needs-review
+gas.question.ppe.option.configured,The explicitly configured demo PPE option,डेमो में स्पष्ट रूप से निर्धारित सुरक्षा उपकरण,,,,needs-review
+gas.question.buddy.prompt,Which choice completes the buddy / attendant step?,कौन सा विकल्प साथी / परिचर चरण पूरा करता है?,,,,needs-review
+gas.question.buddy.explanation,The fixture requires the configured buddy sequence and marks proceeding alone as critical.,डेमो में निर्धारित साथी प्रक्रिया आवश्यक है। अकेले आगे बढ़ना गंभीर त्रुटि है।,,,,needs-review
+gas.question.buddy.option.alone,Proceed alone,अकेले आगे बढ़ना,,,,needs-review
+gas.question.buddy.option.confirm,Confirm the configured buddy / attendant sequence,निर्धारित साथी / परिचर प्रक्रिया की पुष्टि करना,,,,needs-review
+gas.question.buddy.option.skip,Skip the step,चरण छोड़ना,,,,needs-review
+gas.question.evacuate.prompt,Which action completes this Gas scenario?,कौन सी क्रिया गैस का यह परिदृश्य पूरा करती है?,,,,needs-review
+gas.question.evacuate.explanation,The terminal action combines reporting and the marked safe route.,अंतिम क्रिया में सूचना देना और चिह्नित सुरक्षित रास्ता लेना दोनों हैं।,,,,needs-review
+gas.question.evacuate.option.report_safe,Report and use the configured safe route,सूचना देना और निर्धारित सुरक्षित रास्ता लेना,,,,needs-review
+gas.question.evacuate.option.restricted,Use the restricted route,प्रतिबंधित रास्ता लेना,,,,needs-review
+gas.question.evacuate.option.ignore,Ignore reporting and the route,सूचना और रास्ते की अनदेखी करना,,,,needs-review
+gas.question.authority.prompt,What must define real confined-space entry rules?,वास्तविक सीमित स्थान में प्रवेश के नियम किससे तय होने चाहिए?,,,,needs-review
+gas.question.authority.explanation,This unvalidated prototype does not grant entry authorization.,यह अप्रमाणित डेमो प्रवेश की अनुमति नहीं देता।,,,,needs-review
+gas.question.authority.option.demo_score,The demo score alone,केवल डेमो के अंकों से,,,,needs-review
+gas.question.authority.option.approved,Approved site procedures and authorized personnel,स्वीकृत कार्यस्थल प्रक्रियाओं और अधिकृत कर्मियों से,,,,needs-review
+gas.question.authority.option.guess,An unreviewed guess based on this app,इस ऐप पर आधारित अप्रमाणित अनुमान से,,,,needs-review
+fire.feedback.hazard_correct,Hazard recognized. Continue to the alarm.,खतरा पहचाना गया। अब अलार्म की ओर बढ़ें।,,,,needs-review
+fire.feedback.hazard_ignored,The hazard was missed. Recognize it before continuing.,खतरे की पहचान छूट गई। आगे बढ़ने से पहले उसे पहचानें।,,,,needs-review
+fire.feedback.alarm_correct,Alarm raised in the demo.,डेमो में अलार्म बजाया गया।,,,,needs-review
+fire.feedback.alarm_missed,Notification was missed. Return to the alarm action.,सूचना देना छूट गया। अलार्म की क्रिया फिर करें।,,,,needs-review
+fire.feedback.equipment_correct,The configured demo response was selected.,डेमो में निर्धारित प्रतिक्रिया चुनी गई।,,,,needs-review
+fire.feedback.blocked_route,The blocked route is a critical error in this scenario. Retry the configured response.,इस परिदृश्य में अवरुद्ध रास्ता चुनना गंभीर त्रुटि है। निर्धारित प्रतिक्रिया फिर चुनें।,,,,needs-review
+fire.feedback.evacuation_correct,Safe exit and muster sequence completed.,सुरक्षित निकास और एकत्रीकरण क्रम पूरा हुआ।,,,,needs-review
+fire.feedback.reentry,Re-entry is a critical error in this scenario. Use the safe exit.,इस परिदृश्य में खतरे में दोबारा प्रवेश गंभीर त्रुटि है। सुरक्षित निकास लें।,,,,needs-review
+gas.feedback.alarm_correct,Demo detector alarm recognized.,डेमो डिटेक्टर का अलार्म पहचाना गया।,,,,needs-review
+gas.feedback.alarm_ignored,The alarm was missed. Inspect the detector.,अलार्म छूट गया। डिटेक्टर देखें।,,,,needs-review
+gas.feedback.zone_correct,Restricted area recognized.,प्रतिबंधित क्षेत्र पहचाना गया।,,,,needs-review
+gas.feedback.unauthorized_entry,Unauthorized entry is a critical error in this scenario. Stay outside the boundary.,इस परिदृश्य में बिना अनुमति प्रवेश गंभीर त्रुटि है। सीमा के बाहर रहें।,,,,needs-review
+gas.feedback.ppe_correct,Configured demo PPE selected.,डेमो में निर्धारित सुरक्षा उपकरण चुना गया।,,,,needs-review
+gas.feedback.ppe_incorrect,This option is not approved by the demo configuration. Try again.,यह विकल्प डेमो में स्वीकृत नहीं है। फिर कोशिश करें।,,,,needs-review
+gas.feedback.buddy_correct,Buddy / attendant sequence confirmed.,साथी / परिचर प्रक्रिया की पुष्टि हुई।,,,,needs-review
+gas.feedback.buddy_missed,Proceeding alone is a critical error in this scenario. Confirm the configured sequence.,इस परिदृश्य में अकेले आगे बढ़ना गंभीर त्रुटि है। निर्धारित प्रक्रिया की पुष्टि करें।,,,,needs-review
+gas.feedback.evacuate_correct,Report and safe-route sequence completed.,सूचना देने और सुरक्षित रास्ता लेने का क्रम पूरा हुआ।,,,,needs-review
+gas.feedback.evacuate_incorrect,The restricted route is a critical error in this scenario. Use the safe route.,इस परिदृश्य में प्रतिबंधित रास्ता चुनना गंभीर त्रुटि है। सुरक्षित रास्ता लें।,,,,needs-review
+action.identify_hazard,Identify the hazard,खतरा पहचानें,,,,needs-review
+action.ignore_hazard,Ignore the hazard,खतरे की अनदेखी करें,,,,needs-review
+action.raise_alarm,Raise the alarm,अलार्म बजाएँ,,,,needs-review
+action.move_without_alarm,Move on without raising the alarm,अलार्म बजाए बिना आगे बढ़ें,,,,needs-review
+action.use_demo_extinguisher_when_permitted,Use the equipment permitted by this demo,इस डेमो में अनुमत उपकरण उपयोग करें,,,,needs-review
+action.take_blocked_route,Take the blocked route,अवरुद्ध रास्ता लें,,,,needs-review
+action.reach_safe_exit_and_muster,Reach the safe exit and muster area,सुरक्षित निकास और एकत्रीकरण क्षेत्र पहुँचें,,,,needs-review
+action.reenter_hazard,Re-enter the hazard area,खतरे वाले क्षेत्र में फिर प्रवेश करें,,,,needs-review
+action.inspect_detector_alarm,Inspect the detector alarm,डिटेक्टर का अलार्म देखें,,,,needs-review
+action.ignore_detector_alarm,Ignore the detector alarm,डिटेक्टर के अलार्म की अनदेखी करें,,,,needs-review
+action.recognize_restricted_zone,Recognize and remain outside the restricted area,प्रतिबंधित क्षेत्र पहचानें और बाहर रहें,,,,needs-review
+action.enter_restricted_zone,Enter the restricted area,प्रतिबंधित क्षेत्र में प्रवेश करें,,,,needs-review
+action.select_configured_ppe_option,Select the configured demo PPE option,डेमो में निर्धारित सुरक्षा उपकरण चुनें,,,,needs-review
+action.select_unapproved_demo_option,Select the unapproved demo option,अस्वीकृत डेमो विकल्प चुनें,,,,needs-review
+action.confirm_buddy_attendant_sequence,Confirm the buddy / attendant sequence,साथी / परिचर प्रक्रिया की पुष्टि करें,,,,needs-review
+action.proceed_alone,Proceed alone,अकेले आगे बढ़ें,,,,needs-review
+action.report_and_use_safe_route,Report and use the safe route,सूचना दें और सुरक्षित रास्ता लें,,,,needs-review
+action.use_restricted_route,Use the restricted route,प्रतिबंधित रास्ता लें,,,,needs-review
+fire.step.recognize.objective,Recognize the fire hazard,आग का खतरा पहचानें,,,,needs-review
+fire.step.recognize.narration,Observe the marked demo hazard. Choose how to respond.,चिह्नित डेमो खतरा देखें। प्रतिक्रिया चुनें।,,,,needs-review
+fire.step.alarm.objective,Raise the alarm,अलार्म बजाएँ,,,,needs-review
+fire.step.alarm.narration,Find the alarm panel and choose the notification action.,अलार्म पैनल खोजें और सूचना देने की क्रिया चुनें।,,,,needs-review
+fire.step.decision.objective,Choose the configured response,निर्धारित प्रतिक्रिया चुनें,,,,needs-review
+fire.step.decision.narration,This fixture permits demo equipment use. It does not authorize real firefighting.,इस डेमो में प्रशिक्षण उपकरण की अनुमति है। इससे वास्तविक आग बुझाने की अनुमति नहीं मिलती।,,,,needs-review
+fire.step.evacuate.objective,Use the safe exit and muster area,सुरक्षित निकास और एकत्रीकरण क्षेत्र जाएँ,,,,needs-review
+fire.step.evacuate.narration,Follow the marked safe route. Do not choose the blocked route or re-enter the hazard.,चिह्नित सुरक्षित रास्ता लें। अवरुद्ध रास्ता न चुनें और खतरे में फिर प्रवेश न करें।,,,,needs-review
+fire.scenario.demo01.title,Fire & Explosion Response,आग और विस्फोट प्रतिक्रिया,,,,needs-review
+fire.scenario.demo01.description,"Recognize the hazard, raise the alarm, make the configured demo decision and reach the muster area.","खतरा पहचानें, अलार्म बजाएँ, डेमो में निर्धारित निर्णय लें और एकत्रीकरण क्षेत्र पहुँचें।",,,,needs-review
+fire.objective.recognize,Recognize,खतरे की पहचान,,,,needs-review
+fire.objective.alarm,Alarm,अलार्म,,,,needs-review
+fire.objective.safe_decision,Safe decision,सुरक्षित निर्णय,,,,needs-review
+fire.objective.evacuate,Evacuate,सुरक्षित निकासी,,,,needs-review
+category.hazard_recognition,Hazard recognition,खतरे की पहचान,,,,needs-review
+category.alarm_notification,Alarm notification,अलार्म और सूचना,,,,needs-review
+category.decision_equipment,Decision equipment,उपकरण का निर्णय,,,,needs-review
+category.evacuation_sequence,Evacuation sequence,निकासी का क्रम,,,,needs-review
+topic.fire.hazard_recognition,Hazard recognition,खतरे की पहचान,,,,needs-review
+topic.fire.alarm,Alarm,अलार्म,,,,needs-review
+topic.fire.evacuation,Evacuation,निकासी,,,,needs-review
+topic.fire.sequence,Sequence,क्रियाओं का क्रम,,,,needs-review
+gas.step.alarm.objective,Recognize the detector alarm,डिटेक्टर का अलार्म पहचानें,,,,needs-review
+gas.step.alarm.narration,The detector shows a demo alarm. No gas concentration or real safety threshold is simulated.,डिटेक्टर डेमो अलार्म दिखा रहा है। इसमें गैस की सांद्रता या वास्तविक सुरक्षा सीमा नहीं दी गई है।,,,,needs-review
+gas.step.zone.objective,Recognize the restricted area,प्रतिबंधित क्षेत्र पहचानें,,,,needs-review
+gas.step.zone.narration,Observe the training boundary and choose the restricted-area response.,प्रशिक्षण सीमा देखें और प्रतिबंधित क्षेत्र के लिए प्रतिक्रिया चुनें।,,,,needs-review
+gas.step.ppe.objective,Select configured demo PPE,डेमो में निर्धारित सुरक्षा उपकरण चुनें,,,,needs-review
+gas.step.ppe.narration,Use the option specified by this demo. Real equipment selection requires the site SOP.,इस डेमो का निर्धारित विकल्प चुनें। वास्तविक उपकरण के लिए कार्यस्थल की स्वीकृत कार्यविधि आवश्यक है।,,,,needs-review
+gas.step.buddy.objective,Confirm the buddy / attendant sequence,साथी / परिचर प्रक्रिया की पुष्टि करें,,,,needs-review
+gas.step.buddy.narration,Find the buddy station and choose the configured sequence.,साथी का स्थान खोजें और निर्धारित प्रक्रिया चुनें।,,,,needs-review
+gas.step.evacuate.objective,Report and use the safe route,सूचना दें और सुरक्षित रास्ता लें,,,,needs-review
+gas.step.evacuate.narration,Use the marked safe route and report the alarm as configured in this demo.,चिह्नित सुरक्षित रास्ता लें और डेमो में निर्धारित तरीके से अलार्म की सूचना दें।,,,,needs-review
+gas.scenario.demo01.title,Gas Leak & Confined Space,गैस रिसाव और सीमित स्थान,,,,needs-review
+gas.scenario.demo01.description,"Recognize the demo detector alarm, restricted area, equipment and buddy sequence, then take the safe route.","डेमो डिटेक्टर का अलार्म, प्रतिबंधित क्षेत्र, उपकरण और साथी प्रक्रिया पहचानें; फिर सुरक्षित रास्ता लें।",,,,needs-review
+gas.objective.alarm,Alarm,अलार्म,,,,needs-review
+gas.objective.hazard_zone,Hazard zone,खतरे वाला क्षेत्र,,,,needs-review
+gas.objective.ppe,Ppe,व्यक्तिगत सुरक्षा उपकरण,,,,needs-review
+gas.objective.buddy,Buddy,साथी,,,,needs-review
+gas.objective.evacuate,Evacuate,सुरक्षित निकासी,,,,needs-review
+category.alarm_recognition,Alarm recognition,अलार्म की पहचान,,,,needs-review
+category.hazard_zone,Hazard zone,खतरे वाला क्षेत्र,,,,needs-review
+category.ppe,Ppe,व्यक्तिगत सुरक्षा उपकरण,,,,needs-review
+category.buddy_system,Buddy system,साथी प्रक्रिया,,,,needs-review
+category.evacuation_reporting,Evacuation reporting,निकासी और सूचना,,,,needs-review
+topic.gas.alarm,Alarm,अलार्म,,,,needs-review
+topic.gas.hazard_zone,Hazard zone,खतरे वाला क्षेत्र,,,,needs-review
+topic.gas.confined_space,Confined space,सीमित स्थान,,,,needs-review
+topic.gas.ppe,Ppe,व्यक्तिगत सुरक्षा उपकरण,,,,needs-review
+topic.gas.buddy_system,Buddy system,साथी प्रक्रिया,,,,needs-review
+topic.gas.evacuation,Evacuation,निकासी,,,,needs-review
